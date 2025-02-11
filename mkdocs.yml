@@ -1,0 +1,7 @@
+site_name: Panoptic
+theme:
+  name: material
+  logo: assets/logo_panoptic_grand.png
+  favicon: assets/logo_panoptic_petit.png
+extra_css:
+  - stylesheets/extra.css
