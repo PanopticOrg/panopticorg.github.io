@@ -22,4 +22,10 @@ extra_css:
   - stylesheets/extra.css
 repo_url: https://github.com/PanopticOrg/panopticorg.github.io
 repo_name: PanopticDocs
-edit_uri: repo_url: https://github.com/squidfunk/mkdocs-material
+edit_uri: https://github.com/squidfunk/mkdocs-material
+nav:
+  - Welcome
+  - Getting Started
+  - Similarity
+  - Plugins
+  - Usecases
