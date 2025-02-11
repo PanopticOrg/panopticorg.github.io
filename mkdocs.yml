@@ -3,5 +3,23 @@ theme:
   name: material
   logo: assets/logo_panoptic_grand.png
   favicon: assets/logo_panoptic_petit.png
+  icon:
+    repo: fontawesome/brands/github
+    palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 extra_css:
   - stylesheets/extra.css
+repo_url: https://github.com/PanopticOrg/panopticorg.github.io
+repo_name: PanopticDocs
+edit_uri: repo_url: https://github.com/squidfunk/mkdocs-material
