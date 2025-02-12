@@ -1,17 +1,21 @@
-# Welcome to Panoptic
+# Qu'est ce que Panoptic ? 
 
-Trying to add an image ![image](images/_page_3_Picture_3.jpeg)
+Panoptic est un logiciel dédié à la recherche permettant d'explorer et d'annoter de larges corpus d'images. 
 
-## Commands
+![image](images/demo.gif)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Cet outil intègre ainsi de nombreuses fonctions avec l’objectif d’aider les chercheur·euses pour travailler au sein d’une importante masse de données : regroupement d’images, recherche de similarités visuelles, annotations fines ou par lots, import de données associées aux images, gestion de corpus plurisémiotiques, etc. 
 
-## Project layout
+## Synthèse des fonctionnalités disponibles
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+Panoptic permet de:
+
+- Explorer l’ensemble des éléments d’un corpus d’images importé par les chercheur·euses.
+- Regrouper des images ensemble en fonction de leur similarité.
+- Trouver des images similaires à une image particulière ou à des groupes d’images.
+- Annoter des images en fonction de différentes propriétés : date, url, tag(s), valeur numérique, vrai/faux
+- Grouper, trier et filtrer des images en fonction de leurs propriétés (importées ou annotées dans
+l’interface).
+- Importer, gérer et exporter des propriétés associées aux images.
+

@@ -1,25 +1,63 @@
-site_name: Panoptic
+site_name: Panoptic Docs
 theme:
   name: material
   logo: assets/logo_panoptic_grand.png
   favicon: assets/logo_panoptic_petit.png
   icon:
     repo: fontawesome/brands/github
-    palette: 
+  palette: 
 
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
+  # Palette toggle for light mode
+  - scheme: default
+    media: "(prefers-color-scheme: light)"
+    primary: purple
+    toggle:
+      icon: material/brightness-7 
+      name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  # Palette toggle for dark mode
+  - scheme: slate
+    media: "(prefers-color-scheme: dark)"
+    primary: purple
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  features:
+# - announce.dismiss
+  # - content.action.edit
+  # - content.action.view
+  - content.code.annotate
+  - content.code.copy
+  - content.tabs.link
+  - content.tooltips
+  # - header.autohide
+  # - navigation.expand
+  - navigation.indexes
+  # - navigation.instant
+  # - navigation.prune
+  - navigation.sections
+  # - navigation.tabs
+  # - navigation.tabs.sticky
+  # - navigation.top
+  - navigation.footer
+  - navigation.tracking
+  - search.highlight
+  - search.share
+  - search.suggest
+  - toc.follow
+  # - toc.integrate
 extra_css:
   - stylesheets/extra.css
 repo_url: https://github.com/CERES-Sorbonne/Panoptic
 repo_name: Panoptic
-
+nav:
+  - Accueil: index.md
+  - Installation: 
+    - Installation (Standard): install/install.md
+    - Installation (Developpeurs): install/install_dev.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
