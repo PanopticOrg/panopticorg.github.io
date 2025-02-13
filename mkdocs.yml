@@ -55,7 +55,7 @@ nav:
   - Installation: 
     - Installation (Standard): install/install.md
     - Installation (Developpeurs): install/install_dev.md
-  - Démarrage:
+  - Utilisation:
     - Premier Lancement: start/first_start.md
     - Les Projets: start/projets.md
     - Ajouter des Images: start/images.md
@@ -67,7 +67,7 @@ nav:
       - Les Recommandations: start/reco.md
   - Approfondir:
     - Comprendre l'import des images: advanced/import.md
-    - Comprendre les instances: advances/instances.md
+    - Comprendre les instances: advanced/instances.md
     - Projets: 
       - Partager un projet: advanced/projectshare.md
       - Importer un projet: advanced/projectimport.md
