@@ -17,7 +17,13 @@ Si vous avez déjà python d'installé, avec une version supérieure ou égale �
     pip install panoptic
     ```
 
-=== "macOS / Linux"
+=== "Linux"
+
+    ```sh
+    pip3 install panoptic
+    ```
+
+=== "macOS"
 
     ```sh
     pip3 install panoptic
@@ -47,7 +53,15 @@ Les paquets python pouvant facilement entrer en conflits en fonction des version
     pip install panoptic
     ```
 
-=== "macOS / Linux"
+=== "Linux"
+
+    ```sh
+    python3 -m venv panoptic_env
+    source panoptic_env/bin/activate
+    pip3 install panoptic
+    ```
+
+=== "macOS"
 
     ```sh
     python3 -m venv panoptic_env
@@ -64,7 +78,14 @@ Les paquets python pouvant facilement entrer en conflits en fonction des version
     panoptic
     ```
 
-=== "macOS / Linux"
+=== "Linux"
+
+    ```sh
+    source panoptic_env/bin/activate
+    panoptic
+    ```
+
+=== "macOS"
 
     ```sh
     source panoptic_env/bin/activate
@@ -76,6 +97,15 @@ Les paquets python pouvant facilement entrer en conflits en fonction des version
 ### Installation 
 
 Si vous n'avez pas encore python, ou ne souhaitez pas créer l'environnement vous même, vous pouvez utiliser nos scripts d'installation de la manière suivante:
+
+!!! note
+
+    Il vous sera demandé au milieu de l'installation si vous souhaitez installer une version pour carte graphique. Cela permet d'accéler l'importation des images qui peut être longue mais prendra plus de place sur votre disque.
+    Il est important de noter que cela ne fonctionne qu'avec des cartes graphiques NVidia.
+
+
+
+
 
 === "Windows (cmd)"
 

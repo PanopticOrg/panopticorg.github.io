@@ -1,16 +1,26 @@
 # Installation (développement)
 
-Les étapes suivantes impliquent d'avoir cloné le répertoire et sont recommandées pour les utilisateurs souhaitant avoir accès aux versions de développement, ou souhaitant modifier eux même le code afin de contribuer.
+Si vous souhaitez contribuer à panoptic en modifiant le code ou en développant des plugins vous aurez besoin de pouvoir faire tourner panoptic en mode développement.
+
+Commencez par cloner le repository avec: 
+
+```sh
+git clone https://github.com/CERES-Sorbonne/Panoptic.git
+``` 
 
 ## Développement backend uniquement
 
-Pour tester et modifier le fonctionnement backend, nous fournissons un front-end déjà buildé dans le dossier html du back.
+Pour tester et modifier le fonctionnement backend, nous fournissons un front-end déjà buildé dans le dossier html du back:
+
 * aller dans le dossier `panoptic-back`
-* pour installer les dépendances
-    - `python3 setup.py install` simplement pour utiliser panoptic
-    - `pip3 install -e .` pour développer
-    - `pip3 install -r requirements.txt` et il faut ajouter `panoptic-back` au PYTHON_PATH également pour développer
-* lancer `python panoptic/main.py`
+* pour installer les dépendances:
+```sh
+pip install -e .
+```
+* lancer:
+ ```sh
+ panoptic
+ ```
 
 
 ## Développement front et back
