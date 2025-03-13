@@ -36,12 +36,14 @@ Si vous avez déjà python d'installé, avec une version supérieure ou égale �
     Ces derniers peuvent être installés via:
     `xcode-select --install`
 
+    D'autre part, de nombreuses dépendances doivent avoir des versions précises pour fonctionner sous mac. Il est ainsi recommandé d'utiliser le script d'installation de panoptic fourni plus bas.
+
 
 #### Lancement 
 
 Entrez la commande `panoptic` dans votre terminal
 
-### Utilisation d'un environnement virtuel (recommandé)
+### Utilisation d'un environnement virtuel
 
 Les paquets python pouvant facilement entrer en conflits en fonction des versions il est conseillé d'installer panoptic dans un environnement python dédié. 
 
@@ -92,7 +94,7 @@ Les paquets python pouvant facilement entrer en conflits en fonction des version
     panoptic
     ```
 
-## Avec des scripts
+## Avec des scripts (recommandé)
 
 ### Installation 
 

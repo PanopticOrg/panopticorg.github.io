@@ -53,8 +53,9 @@ repo_name: Panoptic
 nav:
   - Accueil: index.md
   - Installation: 
-    - Installation (Standard): install/install.md
-    - Installation (Developpeurs): install/install_dev.md
+    - Installation Standard: install/install.md
+    - Installation Standard - Outils de Similarité: install/install_plugin.md
+    - Installation Developpeurs: install/install_dev.md
   - Utilisation:
     - Premier Lancement: start/first_start.md
     - Les Projets: start/projets.md
