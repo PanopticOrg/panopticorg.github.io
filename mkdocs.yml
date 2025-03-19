@@ -59,11 +59,11 @@ nav:
   - Utilisation:
     - Premier Lancement: start/first_start.md
     - Créer un projet: start/projets.md
-    - Ajouter des Images: start/images.md
+    - Importer des Images: start/images.md
     - Les Propriétés: start/properties.md
     - Importer des Propriétés: start/propsimport.md
     - Exporter des Propriétés: start/propsexport.md
-    - Manipuler Les Images: start/filters.md
+    - Manipuler les Images: start/filters.md
     - La Similarité:
       - Les Clusters: start/clusters.md
       - Les Images Similaires: start/similar.md
@@ -78,6 +78,7 @@ nav:
     - Gérer ses tags:
       - Types de tags: advanced/tags.md
       - Modal des tags: advanced/tagsmodal.md
+    - Les onglets: advanced/onglets.md
   - Plugins:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
