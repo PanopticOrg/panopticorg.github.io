@@ -9,6 +9,8 @@ Les (ré)agencements peuvent être réalisés à n'importe quel moment de l'expl
 
 ## Filtrer
 
+![image](../images/filtres.png)
+
 - Appuyez sur le “+” à côté de FILTRER.
 - Sélectionnez la propriété à partir de laquelle vous voulez filtrer les images. Vous définissez ici les conditions d’affichage des images
 
@@ -20,6 +22,8 @@ Autre exemple, vous pouvez également créer une propriété de type CHECKBOX ("
 
 ## Grouper
 
+![image](../images/grouper.png)
+
 En cliquant sur le "+" à côté de la fonction GROUPE, sélectionnez la propriété à partir de laquelle vous voulez faire le groupage d’images. Une fois la propriété sélectionnée, les groupes se constituent directement à l’écran, dans le panneau central de Panoptic, suivant le critère donné.
 
 ### Réordonner les groupes entre eux :
@@ -27,6 +31,8 @@ En cliquant sur le "+" à côté de la fonction GROUPE, sélectionnez la propri�
 Lorsque l’on ajoute un type de groupage, celui-ci s’indique à côté de l’option GROUPER. Il est possible de changer le type de tri (nombre d’éléments, alphabétique) et l’ordre (croissant ou décroissant) en cliquant sur les flèches afférentes.
 
 ### Groupes et sous-groupes :
+
+![image](../images/grouper2.png)
 
 Il est possible de faire des groupes dans les groupes, par exemple en groupant par une propriété thématique (ce que
 l’on a annoté pour décrire l’image avec un mot clé), puis par une propriété importée en métadonnée, le nom du/de la
@@ -42,9 +48,13 @@ Il est possible de faire des clusters d’images similaires au sein d’un même
 
 ## Trier
 
+![image](../images/tri.png)
+
 - Appuyez sur le "+" à côté de "TRIER".
 - Sélectionnez la propriété à partir de laquelle vous voulez trier les images.
 
 Il est possible de les agencer par ordre alphabétique, ou encore de façon chronologique par exemple.
 
 Il est possible de combiner des fonctions de GROUPAGE et de TRI : on peut alors réaliser des groupes en fonction de certaines propriétés, et trier les images rangées dans ces groupes en fonction d’autres propriétés. Le tri à l’intérieur de groupes peut par exemple être réalisé à partir de la propriété calculée par Panoptic "average hash". Il s’agit d’un calcul de similarités sommaire. Cela peut par exemple permettre de trier les photos d’un-e même photographe (grouper par "auteur") en fonction de leurs ressemblances générales (trier par "average hash").
+
+![image](../images/tri2.png)
