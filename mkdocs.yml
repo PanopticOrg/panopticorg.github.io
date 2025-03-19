@@ -58,9 +58,11 @@ nav:
     - Installation Developpeurs: install/install_dev.md
   - Utilisation:
     - Premier Lancement: start/first_start.md
-    - Les Projets: start/projets.md
+    - Créer un projet: start/projets.md
     - Ajouter des Images: start/images.md
     - Les Propriétés: start/properties.md
+    - Importer des Propriétés: start/propsimport.md
+    - Exporter des Propriétés: start/propsexport.md
     - Manipuler Les Images: start/filters.md
     - La Similarité:
       - Les Clusters: start/clusters.md
@@ -76,9 +78,6 @@ nav:
     - Gérer ses tags:
       - Types de tags: advanced/tags.md
       - Modal des tags: advanced/tagsmodal.md
-    - Propriétés:
-      - Importer des propriétés: advanced/propsimport.md
-      - Exporter des propriétés: advanced/propsexport.md
   - Plugins:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
