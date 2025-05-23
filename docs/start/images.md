@@ -22,7 +22,7 @@ Une fois que vous avez sélectionné le ou les dossiers d'images à importer, le
 Vous pouvez suivre l'avancée de l'import à gauche, dans la section "Tâche de fond". Plusieurs informations sont indiquées : l'avancement de l'import des images, de leurs miniatures, et de leur vectorisation.
 
 !!! Important
-    Important ! Pour que les images soient vectorisées lors de leur import, il faut avoir au préalable installer le module "PanopticML".
+    Important ! Pour que les images soient vectorisées lors de leur import, il faut avoir au préalable [installé le module "PanopticML"](install/install_plugin/).
 
 !!! Rappel 
     A quoi sert la vectorisation des images ? Dans les grandes lignes, la vectorisation des images est un préalable nécessaire à la recherche d'images similaires les unes aux autres, en fonction de leur contenu formel (ce que l'on voit dans les images).

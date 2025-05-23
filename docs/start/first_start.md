@@ -4,3 +4,4 @@ Au premier démarrage de Panoptic un tutoriel interactif vous sera proposé. Vou
 
 ## Plugin de similarités
 
+Si vous ne l'avez pas encore fait [installez le plugin de similarités](/install/install_plugin/)
