@@ -50,6 +50,7 @@ Ce bouton créé une nouvelle propriété nommée "Clustering" qui assignera à 
 ## Différentes façons de clusteriser
 
 La méthode principale présentée jusqu'ici est celle par défaut "PanopticML.compute_clusters" mais il existe dans le plugin de similarité d'autres façons de créer des clusters, et d'autres plugins pourront également proposer d'autres façons. Celles disponibles par défaut dans le plugin de similarité sont les suivantes:
+
 - compute_clusters: version par défaut qui utiliser l'algorithme KMeans et regroupe les images en fonction d'un nombre de clusters demandés, pratique pour itérer rapidement et effectuer de "grosses coupes" dans un corpus.
 - find_duplicates: créé des groupes en assurant un minimum de seuil de similarité entre les images de ce groupes, cela peut être pratique pour identifier les doublons ou doublons proches dans un corpus. Le seuil de similarité peut être modifié pour être plus ou moins permissif.
 - cluster_by_tags: *experimental*, prend en entrée une propriété de type tags ou multitags et essaie de ratacher chaque image au tag dont elle est le plus proche.
