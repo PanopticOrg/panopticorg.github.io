@@ -1,7 +1,9 @@
 # Manipuler les Images à partir de leurs propriétés
 
-!!! Préalable nécessaire au (ré)agencement d’un corpus
-    Pour faire des FILTRES, des TRIS, des GROUPES, des PROPRIÉTÉS doivent exister et être remplies. Par exemple, on a réalisé de premières annotations d’images du corpus de façon thématique : "papillon", "sport"... Autre exemple, on a importé au préalable des données associées aux images, qui sont constituées en tant que propriétés lors de leur import.
+!!! Important
+    Préalable nécessaire au (ré)agencement d’un corpus :
+
+    Pour faire des FILTRES, des TRIS ou des GROUPES, des PROPRIÉTÉS doivent exister et être remplies. Par exemple, on a réalisé de premières annotations d’images du corpus de façon thématique : "papillon", "sport"... Autre exemple, on a importé au préalable des données associées aux images, qui sont constituées en tant que propriétés lors de leur import.
 
 Ces différentes fonctionnalités sont des fonctionnalités d'exploration visuelle~: tout se passe à l'écran, les (ré)agencements ne sont ni définitifs, ni destructifs du corpus. On peut constamment les annuler, les refaire, les modifier... On peut aussi multiplier ces (ré)agencements, pour explorer son corpus de différentes manières, grâce à la possibilité de créer différents onglets au sein de Panoptic.
 

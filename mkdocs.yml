@@ -61,9 +61,10 @@ nav:
     - Créer un projet: start/projets.md
     - Importer des Images: start/images.md
     - Les Propriétés: start/properties.md
+    - Annoter les Propriétés: start/annotate.md
     - Importer des Propriétés: start/propsimport.md
     - Exporter des Propriétés: start/propsexport.md
-    - Manipuler les Images: start/filters.md
+    - Manipuler les Images à partir de leurs Propriétés: start/filters.md
     - La Similarité:
       - Les Clusters: start/clusters.md
       - Les Images Similaires: start/similar.md
