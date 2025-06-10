@@ -69,6 +69,7 @@ nav:
       - Les Clusters: start/clusters.md
       - Les Images Similaires: start/similar.md
       - Les Recommandations: start/reco.md
+      - La Similarité Textuelle: start/text.md
   - Approfondir:
     - Comprendre l'import des images: advanced/import.md
     - Comprendre les instances: advanced/instances.md
