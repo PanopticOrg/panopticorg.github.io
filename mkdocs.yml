@@ -97,6 +97,7 @@ nav:
     - Memes: usecases/memes.md
     - Films: usecases/movies.md
   - Glossaire: concepts.md
+  - FAQ: faq.md
 markdown_extensions:
   - admonition
   - pymdownx.details
