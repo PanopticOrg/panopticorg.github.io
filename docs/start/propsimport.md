@@ -63,6 +63,7 @@ Vous pouvez ensuite valider l’import en cliquant sur "Import". Les données s�
 ## Précision sur le mode de fusion des données
 
 Si l’on cherche à importer des propriétés déjà existantes (typiquement, si deux personnes travaillent chacune de leur côté sur un même corpus d’images et l’annotent avant de se partager leurs annotations pour mettre à jour leurs avancées respectives), il y a la possibilité de choisir le mode de fusion des données. Quatre possibilités sont proposées :
+
 - New : ce mode crée une nouvelle instance de l’image renseignée dans la colonne path (n’écrase donc pas les données existantes)
 - First : ce mode écrase les propriétés de la plus ancienne instance d’une image enregistrée dans Panoptic, et les remplace par celles renseignées dans le fichier .csv en cours d’import.
 - Last : ce mode écrase les propriétés de la plus récente instance d’une image enregistrée dans Panoptic, et les remplace par celles renseignées dans le fichier .csv en cours d’import.

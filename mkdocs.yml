@@ -98,6 +98,7 @@ nav:
     - Films: usecases/movies.md
   - Glossaire: concepts.md
   - FAQ: faq.md
+  - Ressources Utiles: resources.md
 markdown_extensions:
   - admonition
   - pymdownx.details

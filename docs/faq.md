@@ -1,4 +1,12 @@
-# Questions fréquences
+# Questions fréquentes
+
+## Est ce que panoptic créé les corpus d'image automatiquement ? 
+
+Non panoptic est un outil **d'analyse** de corpus déjà existant. Pour être utilisé il faut préalablement avoir téléchargé son corpus d'images **localement**. 
+
+## Mon corpus est en IIIF, puis-je l'importer dans panoptic ? 
+
+Pour le moment non, mais nous y travaillons.
 
 ## Je n'arrive pas à importer mes données additionnelles dans panoptic
 
@@ -20,5 +28,7 @@ Il est à noter que cela n'augmentera que le calcul des vecteurs d'images qui n'
 
 Le calcul des images peut être long, aussi si plusieurs personnes ont vocation à travailler sur un même projet, l'import peut être fait sur un ordinateur ayant de bonnes capacités de calcul, puis le fichier .db peut être partagé, celui ci se trouve dans le dossier que vous avez choisi au moment de la création du projet. 
 
+## Puis-je annoter à plusieurs en ligne sur panoptic ? 
 
+Non, panoptic est un outil fait pour être utilisé localement, nous avons pour but plus tard de le rendre collaboratif mais cela va demander encore beaucoup de développements. 
 
