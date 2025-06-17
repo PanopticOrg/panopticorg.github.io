@@ -74,8 +74,7 @@ nav:
     - Comprendre l'import des images: advanced/import.md
     - Comprendre les instances: advanced/instances.md
     - Projets: 
-      - Partager un projet: advanced/projectshare.md
-      - Importer un projet: advanced/projectimport.md
+      - Partager un projet: advanced/projectimport.md
       - Paramétrer un projet: advanced/projectparams.md
     - Gérer ses tags:
       - Types de tags: advanced/tags.md
