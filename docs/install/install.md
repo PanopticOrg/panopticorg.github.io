@@ -5,6 +5,62 @@
     Panoptic a été pensé et conçu pour être éxecuté sur un ordinateur local. De nombreux efforts d'optimisations ont été effectués pour que le logiciel puisse tourner sur le plus de machines possibles, néanmoins plus le nombre d'images augmentera et plus une machine dotée d'un bon processeur et d'au moins 16Go de RAM sera conseillée pour une bonne expérience d'utilisation.
 
 
+## Avec des fichiers d'installation (recommandé)
+
+### Installation 
+
+Cette installation à base de script permet d'installer la bonne version de python, ainsi que toutes les dépendances pour être sûr d'être compatible:
+
+!!! note
+
+    Il vous sera demandé au milieu de l'installation si vous souhaitez installer une version pour carte graphique. Cela permet d'accéler l'importation des images qui peut être longue mais prendra plus de place sur votre disque.
+    Il est important de noter que cela ne fonctionne qu'avec des cartes graphiques NVidia.
+
+
+
+
+
+=== "Windows"
+
+    Un executable est disponible [sur ce lien](https://github.com/CERES-Sorbonne/Panoptic/blob/main/install/windows/panoptic.exe) et permet d'installer et de lancer Panoptic au sein d'un environnement virtuel. 
+
+=== "Linux"
+
+    ```sh
+    wget https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_linux.sh -O start_panoptic_linux.sh
+    chmod +x start_panoptic_linux.sh
+    ./start_panoptic_linux.sh
+    ```
+
+=== "macOS"
+
+    ```sh
+    curl -O https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_mac.sh
+    chmod +x start_panoptic_mac.sh
+    ./start_panoptic_mac.sh
+    ```
+
+### Lancement
+
+=== "Windows (cmd)"
+
+    Il suffit de lancer panoptic.exe 
+
+=== "Linux"
+
+    ```sh
+    ./start_panoptic_linux.sh
+    ```
+
+    D'autre part le script ajoute normalement également une icone permettant de lancer panoptic depuis un clic sur l'icone.
+
+
+=== "macOS"
+
+    ```sh
+    ./start_panoptic_mac.sh
+    ```
+
 ## Avec python
 
 ### Installation
@@ -94,61 +150,7 @@ Les paquets python pouvant facilement entrer en conflits en fonction des version
     panoptic
     ```
 
-## Avec des scripts (recommandé)
 
-### Installation 
-
-Si vous n'avez pas encore python, ou ne souhaitez pas créer l'environnement vous même, vous pouvez utiliser nos scripts d'installation de la manière suivante:
-
-!!! note
-
-    Il vous sera demandé au milieu de l'installation si vous souhaitez installer une version pour carte graphique. Cela permet d'accéler l'importation des images qui peut être longue mais prendra plus de place sur votre disque.
-    Il est important de noter que cela ne fonctionne qu'avec des cartes graphiques NVidia.
-
-
-
-
-
-=== "Windows (cmd)"
-
-    Un executable est disponible [sur ce lien](https://github.com/CERES-Sorbonne/Panoptic/blob/main/install/windows/panoptic.exe) et permet d'installer et de lancer Panoptic au sein d'un environnement virtuel. 
-
-=== "Linux"
-
-    ```sh
-    wget https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_linux.sh -O start_panoptic_linux.sh
-    chmod +x start_panoptic_linux.sh
-    ./start_panoptic_linux.sh
-    ```
-
-=== "macOS"
-
-    ```sh
-    curl -O https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_mac.sh
-    chmod +x start_panoptic_mac.sh
-    ./start_panoptic_mac.sh
-    ```
-
-### Lancement
-
-=== "Windows (cmd)"
-
-    Il suffit de lancer panoptic.exe 
-
-=== "Linux"
-
-    ```sh
-    ./start_panoptic_linux.sh
-    ```
-
-    D'autre part le script ajoute normalement également une icone permettant de lancer panoptic depuis un clic sur l'icone.
-
-
-=== "macOS"
-
-    ```sh
-    ./start_panoptic_mac.sh
-    ```
 
 ## Installation avec Docker
 
