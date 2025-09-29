@@ -80,6 +80,7 @@ nav:
       - Types de tags: advanced/tags.md
       - Modal des tags: advanced/tagsmodal.md
     - Les onglets: advanced/onglets.md
+    - Astuces et raccourcis: advanced/astuces.md
   - Plugins:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
