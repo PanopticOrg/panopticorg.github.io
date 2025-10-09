@@ -32,3 +32,6 @@ Le calcul des images peut être long, aussi si plusieurs personnes ont vocation 
 
 Non, panoptic est un outil fait pour être utilisé localement, nous avons pour but plus tard de le rendre collaboratif mais cela va demander encore beaucoup de développements. 
 
+## Où est ce que Panoptic stocke les données ? 
+
+Lorsque vous créez un projet, vous choisissez un dossier dans lequel le créer, ce dossier contiendra toute la base de donnée sqlite (le fichier panoptic.db) ainsi que les éventuelles données des plugins. C'est ce fichier .db que vous pouvez utiliser pour partager un projet à quelqu'un d'autre ou pour sauvegarder un projet ailleurs que sur votre ordinateur (pour faire un backup).
