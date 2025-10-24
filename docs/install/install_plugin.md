@@ -1,5 +1,10 @@
 # Installation (Fin)
 
+!!! info
+
+    Si vous avez installé panoptic avec un script / un exe ou en utilisant panoptic[vision] cette étape peut être ignorée
+
+    
 Par soucis de flexibilité, Panoptic est installé sans les outils de similarité. Dans la plupart des cas vous voudrez les installer pour utiliser les fonctionnalités de clustering et de similarité d'image.
 
 Il suffit pour ceci de cliquer sur le bouton "Installer le Plugin de Similarité" sur la page d'accueil de panoptic une fois celui ci lancé. Cela prendra quelques instants par les librairies peuvent être un peu lourdes à télécharger (plusieurs centaines de Mo).

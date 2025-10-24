@@ -94,7 +94,11 @@ Si vous avez déjà python d'installé, avec une version supérieure ou égale �
 
     D'autre part, de nombreuses dépendances doivent avoir des versions précises pour fonctionner sous mac. Il est ainsi recommandé d'utiliser le script d'installation de panoptic fourni plus bas.
 
+!!! note
 
+    Dans les trois cas il est possible de remplacer `panoptic` dans la commande par `panoptic[vision]` pour installer panoptic avec le module de similarité directement
+
+    
 #### Lancement 
 
 Entrez la commande `panoptic` dans votre terminal
