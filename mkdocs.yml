@@ -81,11 +81,11 @@ nav:
       - Modal des tags: advanced/tagsmodal.md
     - Les onglets: advanced/onglets.md
     - Astuces et raccourcis: advanced/astuces.md
+    - Choisir son modèle: advances/models.md
   - Plugins:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
     - Créer ses plugins: plugins/create.md
-    - Exemples: plugins/examples.md
   - Méthodologies proposées:
     - Créer des clusters pour identifier des tendances: method/clusters.md
     - Identifier des doublons: method/duplicates.md
