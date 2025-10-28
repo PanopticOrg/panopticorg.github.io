@@ -81,7 +81,7 @@ nav:
       - Modal des tags: advanced/tagsmodal.md
     - Les onglets: advanced/onglets.md
     - Astuces et raccourcis: advanced/astuces.md
-    - Choisir son modèle: advances/models.md
+    - Choisir son modèle: advanced/models.md
   - Plugins:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
