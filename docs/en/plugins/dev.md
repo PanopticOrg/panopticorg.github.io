@@ -405,7 +405,7 @@ Multiple filtering options are treated as **OR** conditions.
 Writing to the project database is mostly done with the **commit system**.  
 The following types support undo/redo functionality and automatic UI synchronization when using commits:
 
-`folders`, `instances`, `properties`, `tags`, `instance_values`, and `image_values`.
+`folders`, `instances`, `properties`, `property_groups`, `tags`, `instance_values`, and `image_values`.
 
 A commit object contains one batch of updates:
 
@@ -452,6 +452,11 @@ def create_property(
 	type_: PropertyType, 
 	mode: PropertyMode
 ) -> Property
+
+def create_property_group(
+    self,
+    name: str
+) -> PropertyGroup
 
 def create_tag(
 	self, 

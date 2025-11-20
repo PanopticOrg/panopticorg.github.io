@@ -404,7 +404,7 @@ Plusieurs options de filtrage sont traitées comme des conditions **OU**.
 L'écriture dans la base de données du projet se fait principalement avec le **système de commit**.
 Les types suivants prennent en charge la fonctionnalité d'annulation/rétablissement et la synchronisation automatique de l'interface utilisateur lors de l'utilisation de commits :
 
-`folders`, `instances`, `properties`, `tags`, `instance_values` et `image_values`.
+`folders`, `instances`, `properties`, `property_groups`, `tags`, `instance_values` et `image_values`.
 
 Un objet de commit contient un lot de mises à jour :
 
@@ -451,6 +451,12 @@ def create_property(
 	type_: PropertyType, 
 	mode: PropertyMode
 ) -> Property
+
+def create_property_group(
+    self,
+    name: str
+) -> PropertyGroup
+
 
 def create_tag(
 	self, 
