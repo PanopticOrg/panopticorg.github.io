@@ -6,50 +6,104 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette: 
-
-  # Palette toggle for light mode
-  - scheme: default
-    media: "(prefers-color-scheme: light)"
-    primary: purple
-    toggle:
-      icon: material/brightness-7 
-      name: Switch to dark mode
-
-  # Palette toggle for dark mode
-  - scheme: slate
-    media: "(prefers-color-scheme: dark)"
-    primary: purple
-    toggle:
-      icon: material/brightness-4
-      name: Switch to light mode
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
-# - announce.dismiss
-  # - content.action.edit
-  # - content.action.view
-  - content.code.annotate
-  - content.code.copy
-  - content.tabs.link
-  - content.tooltips
-  # - header.autohide
-  # - navigation.expand
-  - navigation.indexes
-  # - navigation.instant
-  # - navigation.prune
-  - navigation.sections
-  - navigation.tabs
-  # - navigation.tabs.sticky
-  # - navigation.top
-  - navigation.footer
-  - navigation.tracking
-  - search.highlight
-  - search.share
-  - search.suggest
-  - toc.follow
-  # - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
 extra_css:
   - stylesheets/extra.css
+
 repo_url: https://github.com/CERES-Sorbonne/Panoptic
 repo_name: Panoptic
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Accueil: Home
+            Installation: Installation
+            'Installation Standard': 'Standard Installation'
+            'Installation Standard - Outils de Similarité': 'Standard Installation - Similarity Tools'
+            'Installation Developpeurs': 'Developer Installation'
+            Utilisation: Usage
+            'Premier Lancement': 'First Start'
+            'Créer un projet': 'Create a project'
+            'Importer des Images': 'Import Images'
+            'Les Propriétés': 'Properties'
+            'Annoter les Propriétés': 'Annotate Properties'
+            'Importer des Propriétés': 'Import Properties'
+            'Exporter des Propriétés': 'Export Properties'
+            'Manipuler les Images à partir de leurs Propriétés': 'Manipulate Images from their Properties'
+            'La Similarité': 'Similarity'
+            'Les Clusters': 'Clusters'
+            'Les Images Similaires': 'Similar Images'
+            'Les Recommandations': 'Recommendations'
+            'La Similarité Textuelle': 'Text Similarity'
+            Approfondir: Advanced
+            "Comprendre l'import des images": "Understanding image import"
+            "Comprendre les instances": "Understanding instances"
+            Projets: Projects
+            "Partager un projet": "Share a project"
+            "Paramétrer un projet": "Set up a project"
+            "Gérer ses tags": "Manage tags"
+            "Types de tags": "Tag types"
+            "Modal des tags": "Tags modal"
+            "Les onglets": "Tabs"
+            "Astuces et raccourcis": "Tips and shortcuts"
+            "Choisir son modèle": "Choose your model"
+            Plugins: Plugins
+            Introduction: Introduction
+            "Ajouter des plugins": "Add plugins"
+            "Créer ses plugins": "Create plugins"
+            'Méthodologies proposées': Methodologies
+            "Créer des clusters pour identifier des tendances": "Create clusters to identify trends"
+            "Identifier des doublons": "Identify duplicates"
+            "Débruiter son corpus": "Clean your corpus"
+            "Gérer ses espaces de travail": "Manage your workspaces"
+            "Cas d'Usage": "Use Cases"
+            "Images d'archive": "Archive images"
+            Instagram: Instagram
+            Memes: Memes
+            Films: Movies
+            Glossaire: Glossary
+            FAQ: FAQ
+            'Ressources Utiles': Resources
+
 nav:
   - Accueil: index.md
   - Installation: 
@@ -86,7 +140,7 @@ nav:
   - Plugins:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
-    - Créer ses plugins: plugins/create.md
+    - Créer ses plugins: plugins/dev.md
   - Méthodologies proposées:
     - Créer des clusters pour identifier des tendances: method/clusters.md
     - Identifier des doublons: method/duplicates.md
@@ -100,6 +154,7 @@ nav:
   - Glossaire: concepts.md
   - FAQ: faq.md
   - Ressources Utiles: resources.md
+
 markdown_extensions:
   - admonition
   - pymdownx.details
