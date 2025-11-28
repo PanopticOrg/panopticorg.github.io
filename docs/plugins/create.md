@@ -4,4 +4,5 @@ Si les plugins déjà existant ne correspondent pas à vos usages, n'hésitez pa
 
 Un guide détaillé avec exemple est disponible ici: 
 
-https://github.com/CERES-Sorbonne/Panoptic/wiki/Plugin
+[https://github.com/CERES-Sorbonne/Panoptic/wiki/Plugin](https://github.com/CERES-Sorbonne/Panoptic/wiki/Plugin)
+

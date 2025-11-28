@@ -22,7 +22,7 @@ Cette installation à base de script permet d'installer la bonne version de pyth
 
 === "Windows"
 
-    Un executable est disponible [sur ce lien](https://github.com/CERES-Sorbonne/Panoptic/blob/main/install/windows/panoptic.exe) et permet d'installer et de lancer Panoptic au sein d'un environnement virtuel. 
+    Un executable est disponible [sur ce lien](https://github.com/CERES-Sorbonne/Panoptic/raw/refs/heads/main/install/windows/panoptic.exe) et permet d'installer et de lancer Panoptic au sein d'un environnement virtuel. 
 
 === "Linux"
 
@@ -35,7 +35,7 @@ Cette installation à base de script permet d'installer la bonne version de pyth
 === "macOS"
 
     ```sh
-    curl -O https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_mac.sh
+    curl -O https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_mac2.sh
     chmod +x start_panoptic_mac.sh
     ./start_panoptic_mac.sh
     ```

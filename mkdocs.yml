@@ -63,6 +63,7 @@ nav:
     - Les Propriétés: start/properties.md
     - Annoter les Propriétés: start/annotate.md
     - Importer des Propriétés: start/propsimport.md
+    - Importer des Tags / Thésaurus: start/tagsimport.md
     - Exporter des Propriétés: start/propsexport.md
     - Manipuler les Images à partir de leurs Propriétés: start/filters.md
     - La Similarité:

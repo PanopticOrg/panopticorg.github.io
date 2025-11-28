@@ -1,5 +1,9 @@
 # Créer des clusters pour identifier des tendances
 
+## Objectif
+
+
+
 ## Clustering imbriqués
 
 ## Sauvegarder les clusters
