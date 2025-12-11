@@ -14,6 +14,7 @@
 - [Panoptic, un outil d'exploration par similarité de vastes corpus d'images](https://hal.science/hal-04687627/)
 - [Fantin Le Ber. IA et patrimoine, un changement dans la continuité : l’exemple du projet Highvision. Sciences de l’Homme et Société. 2025.](https://dumas.ccsd.cnrs.fr/dumas-05387596v1/file/ENC-PSL_M2TNAH_LE_BER_Fantin.pdf)
 - [Pierre Husson. Indexation iconographique et intelligence artificielle : expérimentations autour du Répertoire des tableaux italiens dans les collections publiques françaises (RETIF). Sciences de l’Homme et Société. 2025. ￿](https://dumas.ccsd.cnrs.fr/dumas-05387482v1/file/ENC-PSL_M2TNAH_HUSSON_Pierre.pdf)
+- [Panoptic présenté au FOSDEM 2025](https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4635-explore-large-image-datasets-with-panoptic/)
 
 ## Littérature complémentaire sur l'analyse d'images
 
