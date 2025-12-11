@@ -141,6 +141,7 @@ nav:
     - Introduction: plugins/intro.md
     - Ajouter des plugins: plugins/add.md
     - Créer ses plugins: plugins/dev.md
+    - Plugins existants: plugins/list.md
   - Méthodologies proposées:
     - Introduction: method/intro.md
     - Créer des clusters pour identifier des tendances: method/clusters.md
