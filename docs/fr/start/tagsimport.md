@@ -35,6 +35,7 @@ Comme pour l'import des propriétés on se rend ici:
 ![](../../images/gestion-import-2.png)
 
 Il suffit ensuite de:
+
 - cliquer sur Tags
 - choisir un fichier csv à importer
 - choisir la propriété dans laquelle importer les tags
