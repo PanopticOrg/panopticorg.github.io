@@ -148,11 +148,15 @@ nav:
     - Identifier des doublons: method/duplicates.md
     - Débruiter son corpus: method/noise.md
     - Gérer ses espaces de travail: method/workspaces.md
-  - Cas d'Usage: 
+  - Comparaison de modèles:
+    - Introduction: compare/intro.md
+    - CLIP: compare/clip.md
+  - Cas d'Usage:
     - Images d'archive: usecases/bnf.md
     - Instagram: usecases/insta.md
     - Memes: usecases/memes.md
     - Films: usecases/movies.md
+    - Personnages de BD: usecases/bd.md
   - Glossaire: concepts.md
   - FAQ: faq.md
   - Ressources Utiles: resources.md
