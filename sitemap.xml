@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+    </url>
+    <url>
+        <loc>Noneconcepts/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneconcepts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/concepts/"/>
+    </url>
+    <url>
+        <loc>Nonefaq/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefaq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq/"/>
+    </url>
+    <url>
+        <loc>Noneresources/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneresources/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/resources/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/astuces/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/astuces/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/astuces/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/import/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/import/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/import/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/instances/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/instances/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/instances/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/models/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/models/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/models/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/onglets/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/onglets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/onglets/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/projectimport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/projectimport/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/projectimport/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/projectparams/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/projectparams/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/projectparams/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/projectshare/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/projectshare/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/projectshare/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/tags/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/tags/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/tags/"/>
+    </url>
+    <url>
+        <loc>Noneadvanced/tagsmodal/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/tagsmodal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/tagsmodal/"/>
+    </url>
+    <url>
+        <loc>Noneinstall/install/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneinstall/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/install/install/"/>
+    </url>
+    <url>
+        <loc>Noneinstall/install_dev/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneinstall/install_dev/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/install/install_dev/"/>
+    </url>
+    <url>
+        <loc>Noneinstall/install_plugin/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneinstall/install_plugin/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/install/install_plugin/"/>
+    </url>
+    <url>
+        <loc>Nonemethod/clusters/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/clusters/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/clusters/"/>
+    </url>
+    <url>
+        <loc>Nonemethod/duplicates/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/duplicates/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/duplicates/"/>
+    </url>
+    <url>
+        <loc>Nonemethod/intro/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/intro/"/>
+    </url>
+    <url>
+        <loc>Nonemethod/noise/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/noise/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/noise/"/>
+    </url>
+    <url>
+        <loc>Nonemethod/thesaurus/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/thesaurus/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/thesaurus/"/>
+    </url>
+    <url>
+        <loc>Nonemethod/workspaces/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/workspaces/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/workspaces/"/>
+    </url>
+    <url>
+        <loc>Noneplugins/add/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/add/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/add/"/>
+    </url>
+    <url>
+        <loc>Noneplugins/create/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/create/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/create/"/>
+    </url>
+    <url>
+        <loc>Noneplugins/dev/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/dev/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/dev/"/>
+    </url>
+    <url>
+        <loc>Noneplugins/intro/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/intro/"/>
+    </url>
+    <url>
+        <loc>Noneplugins/list/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/list/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/list/"/>
+    </url>
+    <url>
+        <loc>Nonestart/annotate/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/annotate/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/annotate/"/>
+    </url>
+    <url>
+        <loc>Nonestart/clusters/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/clusters/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/clusters/"/>
+    </url>
+    <url>
+        <loc>Nonestart/filters/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/filters/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/filters/"/>
+    </url>
+    <url>
+        <loc>Nonestart/first_start/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/first_start/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/first_start/"/>
+    </url>
+    <url>
+        <loc>Nonestart/images/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/images/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/images/"/>
+    </url>
+    <url>
+        <loc>Nonestart/projets/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/projets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/projets/"/>
+    </url>
+    <url>
+        <loc>Nonestart/properties/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/properties/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/properties/"/>
+    </url>
+    <url>
+        <loc>Nonestart/propsexport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/propsexport/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/propsexport/"/>
+    </url>
+    <url>
+        <loc>Nonestart/propsimport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/propsimport/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/propsimport/"/>
+    </url>
+    <url>
+        <loc>Nonestart/reco/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/reco/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/reco/"/>
+    </url>
+    <url>
+        <loc>Nonestart/similar/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/similar/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/similar/"/>
+    </url>
+    <url>
+        <loc>Nonestart/tagsimport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/tagsimport/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/tagsimport/"/>
+    </url>
+    <url>
+        <loc>Nonestart/text/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/text/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/text/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/bd/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/bd/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/bd/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/bnf/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/bnf/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/bnf/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/insta/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/insta/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/insta/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/memes/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/memes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/memes/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/movies/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/movies/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/movies/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/template/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/template/"/>
+    </url>
+    <url>
+        <loc>Noneusecases/virapic/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/virapic/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/virapic/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="None"/>
+    </url>
+    <url>
+        <loc>Noneen/concepts/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/concepts/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneconcepts/"/>
+    </url>
+    <url>
+        <loc>Noneen/faq/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefaq/"/>
+    </url>
+    <url>
+        <loc>Noneen/resources/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/resources/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneresources/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/astuces/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/astuces/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/astuces/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/import/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/import/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/import/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/instances/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/instances/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/instances/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/models/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/models/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/models/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/onglets/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/onglets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/onglets/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/projectimport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/projectimport/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/projectimport/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/projectparams/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/projectparams/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/projectparams/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/projectshare/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/projectshare/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/projectshare/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/tags/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/tags/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/tags/"/>
+    </url>
+    <url>
+        <loc>Noneen/advanced/tagsmodal/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/advanced/tagsmodal/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneadvanced/tagsmodal/"/>
+    </url>
+    <url>
+        <loc>Noneen/install/install/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/install/install/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneinstall/install/"/>
+    </url>
+    <url>
+        <loc>Noneen/install/install_dev/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/install/install_dev/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneinstall/install_dev/"/>
+    </url>
+    <url>
+        <loc>Noneen/install/install_plugin/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/install/install_plugin/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneinstall/install_plugin/"/>
+    </url>
+    <url>
+        <loc>Noneen/method/clusters/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/clusters/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/clusters/"/>
+    </url>
+    <url>
+        <loc>Noneen/method/duplicates/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/duplicates/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/duplicates/"/>
+    </url>
+    <url>
+        <loc>Noneen/method/noise/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/noise/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/noise/"/>
+    </url>
+    <url>
+        <loc>Noneen/method/workspaces/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/workspaces/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/workspaces/"/>
+    </url>
+    <url>
+        <loc>Noneen/plugins/add/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/add/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/add/"/>
+    </url>
+    <url>
+        <loc>Noneen/plugins/create/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/create/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/create/"/>
+    </url>
+    <url>
+        <loc>Noneen/plugins/dev/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/dev/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/dev/"/>
+    </url>
+    <url>
+        <loc>Noneen/plugins/intro/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/intro/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/intro/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/annotate/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/annotate/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/annotate/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/clusters/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/clusters/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/clusters/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/filters/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/filters/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/filters/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/first_start/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/first_start/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/first_start/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/images/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/images/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/images/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/projets/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/projets/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/projets/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/properties/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/properties/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/properties/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/propsexport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/propsexport/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/propsexport/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/propsimport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/propsimport/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/propsimport/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/reco/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/reco/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/reco/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/similar/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/similar/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/similar/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/text/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/text/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/text/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/bnf/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/bnf/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/bnf/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/insta/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/insta/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/insta/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/memes/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/memes/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/memes/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/movies/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/movies/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/movies/"/>
+    </url>
+    <url>
+        <loc>Noneen/method/intro/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/intro/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/intro/"/>
+    </url>
+    <url>
+        <loc>Noneen/method/thesaurus/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/method/thesaurus/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemethod/thesaurus/"/>
+    </url>
+    <url>
+        <loc>Noneen/plugins/list/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plugins/list/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplugins/list/"/>
+    </url>
+    <url>
+        <loc>Noneen/start/tagsimport/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/start/tagsimport/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonestart/tagsimport/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/bd/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/bd/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/bd/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/template/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/template/"/>
+    </url>
+    <url>
+        <loc>Noneen/usecases/virapic/</loc>
+        <lastmod>2026-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/usecases/virapic/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneusecases/virapic/"/>
+    </url>
+</urlset>

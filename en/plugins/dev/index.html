@@ -1,0 +1,4142 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../add/">
+      
+      
+        <link rel="next" href="../list/">
+      
+      
+        
+          <link rel="alternate" href="../../../plugins/dev/" hreflang="fr">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../assets/logo_panoptic_petit.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Create plugins - Panoptic Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../" title="Panoptic Docs" class="md-header__button md-logo" aria-label="Panoptic Docs" data-md-component="logo">
+      
+  <img src="../../../assets/logo_panoptic_grand.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Panoptic Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Create plugins
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../plugins/dev/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CERES-Sorbonne/Panoptic" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Panoptic
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../install/install/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Installation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../start/first_start/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Usage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../advanced/import/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Plugins
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../method/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Methodologies
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../compare/intro.md" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Comparaison de modèles
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../usecases/bnf/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Use Cases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../resources/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Panoptic Docs" class="md-nav__button md-logo" aria-label="Panoptic Docs" data-md-component="logo">
+      
+  <img src="../../../assets/logo_panoptic_grand.png" alt="logo">
+
+    </a>
+    Panoptic Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CERES-Sorbonne/Panoptic" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Panoptic
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Installation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standard Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/install_plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standard Installation - Similarity Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/install_dev/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Usage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/first_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/projets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Import Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/annotate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annotate Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/propsimport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Import Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/tagsimport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importer des Tags / Thésaurus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/propsexport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/filters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manipulate Images from their Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Similarity
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Similarity
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/clusters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clusters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/similar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Similar Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/reco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommendations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/text/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text Similarity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/import/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding image import
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/instances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding instances
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/projectimport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Share a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/projectparams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manage tags
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Manage tags
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tag types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/tagsmodal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags modal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/onglets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/astuces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips and shortcuts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choose your model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create plugins
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-loading-and-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Loading and Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actionresult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ActionResult
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ActionResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registering Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heavy-computation-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heavy Computation &amp; Concurrency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Heavy Computation &amp; Concurrency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#async-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Async Helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-task-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Task Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Task
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-tasks-to-the-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Tasks to the Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step by Step example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step by Step example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Initialization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Vectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins existants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodologies
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodologies
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../method/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../method/clusters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create clusters to identify trends
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../method/duplicates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identify duplicates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../method/noise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clean your corpus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../method/workspaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manage your workspaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparaison de modèles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comparaison de modèles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compare/intro.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compare/clip.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLIP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Use Cases
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usecases/bnf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usecases/insta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instagram
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usecases/memes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usecases/movies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Movies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usecases/bd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personnages de BD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-loading-and-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Loading and Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actionresult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ActionResult
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ActionResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registering Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heavy-computation-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heavy Computation &amp; Concurrency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Heavy Computation &amp; Concurrency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#async-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Async Helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-task-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Task Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Task
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-tasks-to-the-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Tasks to the Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step by Step example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step by Step example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin Initialization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Vectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Create plugins</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Panoptic implements a plugin system that lets you customize how you work with your image data. The interface can adapt to various action results, making it a convenient tool for data visualization and manipulation.</p>
+<hr />
+<h3 id="how-it-works">How It Works</h3>
+<p>Plugins extend Panoptic by hooking into multiple points:</p>
+<ul>
+<li><strong>UI Actions</strong> – Register custom actions that appear in the interface and operate on selected images</li>
+<li><strong>System Events</strong> – Respond to events such as image imports or folder deletions to automate data updates</li>
+<li><strong>Data Layer</strong> – Define custom properties, store vectors, and manage data structures within the project database</li>
+</ul>
+<p>Panoptic’s own machine learning features—CLIP vectors, FAISS clustering, similarity search, and duplicate detection—are implemented inside the <strong>PanopticML</strong> plugin:<br />
+<a href="https://github.com/CERES-Sorbonne/PanopticML">https://github.com/CERES-Sorbonne/PanopticML</a></p>
+<p>It serves as a good example for understanding how to develop your own plugin.</p>
+<hr />
+<h3 id="plugin-loading-and-lifecycle">Plugin Loading and Lifecycle</h3>
+<p>Plugins are loaded at the project level, meaning each Panoptic project can have its own set of active plugins with project-specific configurations. When a project opens, its plugins are initialized and remain active throughout the project's lifetime.<br />
+A plugin is identified by a unique name.</p>
+<hr />
+<h3 id="core-components">Core Components</h3>
+<p><strong>PluginProjectInterface</strong>: The main interface that plugins use to interact with the Panoptic project. It provides access to:</p>
+<ul>
+<li>Database operations (instances, properties, tags, vectors</li>
+<li>Task management for long-running operations</li>
+<li>Event system for reacting to project changes</li>
+<li>UI update triggers</li>
+</ul>
+<p><strong>APlugin</strong>: The base class that all plugins must inherit from. It handles:</p>
+<ul>
+<li>Action registration for UI integration</li>
+<li>Event subscription management</li>
+<li>Access to plugin-specific resources</li>
+</ul>
+<hr />
+<h3 id="plugin-resources">Plugin Resources</h3>
+<p>Each plugin has access to:</p>
+<ul>
+<li><strong>Data folder</strong>: A dedicated directory for storing plugin-specific data, models, caches, or any persistent files the plugin needs</li>
+<li><strong>Project interface</strong>: Full access to project data and operations through the <code>PluginProjectInterface</code></li>
+<li><strong>Base path</strong>: The project’s root directory for accessing project files</li>
+</ul>
+<hr />
+<h2 id="plugin-setup">Plugin Setup</h2>
+<p>Before a plugin can interact with a Panoptic project, it must be properly initialized and registered.<br />
+This section explains how to define the plugin class, configure its parameters, and register actions or events so that it integrates seamlessly into the Panoptic environment.</p>
+<hr />
+<h3 id="base-class">Base Class</h3>
+<p>Every plugin inherits from <code>APlugin</code> and is instantiated with three parameters:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin</span><span class="p">(</span><span class="n">APlugin</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project</span><span class="p">:</span> <span class="n">Project</span><span class="p">,</span> <span class="n">plugin_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">project</span><span class="o">=</span><span class="n">project</span><span class="p">,</span> <span class="n">plugin_path</span><span class="o">=</span><span class="n">plugin_path</span><span class="p">)</span>
+        <span class="c1"># Initialize your plugin here</span>
+</code></pre></div>
+<ul>
+<li><code>project</code>: The loaded Panoptic project</li>
+<li><code>plugin_path</code>: The filesystem path where your plugin is located</li>
+<li><code>name</code>: Your plugin’s unique identifier</li>
+</ul>
+<p>To avoid blocking the application thread, you can execute heavy workloads by overriding the asynchronous function <code>_start()</code>.<br />
+<code>_start()</code> is called automatically when the plugin is loaded.</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Load models, create initial properties, etc.</span>
+</code></pre></div>
+<hr />
+<h3 id="available-attributes">Available Attributes</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>The plugin’s identifier, provided by the user when registering it into Panoptic.</td>
+</tr>
+<tr>
+<td><code>params</code></td>
+<td><code>Any</code></td>
+<td>Customizable <code>params</code> object that provides persistent storage for plugin settings. These can be updated from the UI.</td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td><code>str</code></td>
+<td>Filesystem path to the plugin directory.</td>
+</tr>
+<tr>
+<td><code>data_path</code></td>
+<td><code>Path</code></td>
+<td>Path to the plugin’s personal data folder. The folder is automatically deleted when removing the plugin.</td>
+</tr>
+<tr>
+<td><code>project</code></td>
+<td><code>PluginProjectInterface</code></td>
+<td>Main interface for interacting with the current project. Provides access to project methods and database operations.</td>
+</tr>
+<tr>
+<td><code>_project</code></td>
+<td><code>Project</code></td>
+<td><strong>Warning:</strong> The real project object given at initialization. Use only if necessary. UI updates are not guaranteed for direct modifications.</td>
+</tr>
+<tr>
+<td><code>registered_functions</code></td>
+<td><code>List[FunctionDescription]</code></td>
+<td>List of actions currently registered by this plugin.</td>
+</tr>
+<tr>
+<td><code>vector_types</code></td>
+<td><code>list[VectorType]</code></td>
+<td>Vector types registered by your plugin, automatically updated when modified.</td>
+</tr>
+<tr>
+<td><code>base_key</code></td>
+<td><code>str</code></td>
+<td>Unique database key used to store plugin parameters (<code>&lt;plugin_name&gt;.base</code>).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="available-methods">Available Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>def add_action(self, function, description)</code></td>
+<td>Method</td>
+<td>Register a custom action manually by providing a <code>FunctionDescription</code>.</td>
+</tr>
+<tr>
+<td><code>def add_action_easy(self, function, hooks: list[str] = None)</code></td>
+<td>Method</td>
+<td>Quickly register an async function as an action. You can specify where the action appears in the UI by setting the hooks.  <br>Possible values: <code>'vector_type'</code>, <code>'vector'</code>, <code>'similar'</code>, <code>'group'</code>, <code>'execute'</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin-parameters">Plugin Parameters</h3>
+<p>Plugin parameters let users configure a plugin’s behavior without modifying its code.<br />
+Define your plugin’s parameters by creating a Pydantic <code>BaseModel</code>. These parameters can be adjusted through the UI and are automatically persisted in the database.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyPluginParams</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="c1"># Boolean flags</span>
+    <span class="n">auto_process_imports</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="c1"># Numeric settings</span>
+    <span class="n">batch_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span>
+    <span class="n">confidence_threshold</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.75</span>
+
+    <span class="c1"># String options</span>
+    <span class="n">output_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;json&quot;</span>
+</code></pre></div>
+<p>For each type, the UI shows an adapted input field:</p>
+<ul>
+<li><code>int</code>: Number input</li>
+<li><code>float</code>: Number input with decimal</li>
+<li><code>str</code>: Text input</li>
+<li><code>bool</code>: Checkbox input</li>
+<li><code>PropertyId</code>: Property selection</li>
+<li><code>Enum</code>: Selection field</li>
+<li><code>VectorType</code>: Any registered vector selection</li>
+<li><code>OwnVectorType</code>: Own registered vector selection</li>
+</ul>
+<p>Initialize parameters in your plugin’s <code>__init__</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin</span><span class="p">(</span><span class="n">APlugin</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> 
+        <span class="n">project</span><span class="p">:</span> <span class="n">PluginProjectInterface</span><span class="p">,</span> 
+        <span class="n">plugin_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">project</span><span class="o">=</span><span class="n">project</span><span class="p">,</span> <span class="n">plugin_path</span><span class="o">=</span><span class="n">plugin_path</span><span class="p">)</span>
+
+        <span class="c1"># Initialize with defaults</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">params</span> <span class="o">=</span> <span class="n">MyPluginParams</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="creating-functions">Creating Functions</h3>
+<p>Plugin functions are async methods that perform operations on project data. They receive an <code>ActionContext</code> and can also declare additional inputs:</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">:</span> <span class="n">ActionContext</span><span class="p">,</span> <span class="n">param1</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+
+    <span class="c1"># Get instances selected by user</span>
+    <span class="n">instances</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_instances</span><span class="p">(</span><span class="n">context</span><span class="o">.</span><span class="n">instance_ids</span><span class="p">)</span>
+
+    <span class="c1"># Process data</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">process_data</span><span class="p">(</span><span class="n">instances</span><span class="p">,</span> <span class="n">param1</span><span class="p">)</span>
+
+    <span class="c1"># Return results</span>
+    <span class="k">return</span> <span class="n">ActionResult</span><span class="p">(</span>
+        <span class="n">groups</span><span class="o">=</span><span class="p">[</span><span class="n">results</span><span class="p">],</span>
+        <span class="n">notifs</span><span class="o">=</span><span class="p">[</span><span class="n">Notif</span><span class="p">(</span><span class="n">NotifType</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span> <span class="s2">&quot;Success&quot;</span><span class="p">,</span> <span class="s2">&quot;Processing complete&quot;</span><span class="p">)]</span>
+    <span class="p">)</span>
+</code></pre></div>
+<p><code>ActionContext</code> is defined as follows:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">ActionContext</span><span class="p">:</span>  
+    <span class="n">instance_ids</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>  
+</code></pre></div>
+The values reflect the current UI context in which the action was called. Use <code>instance_ids</code> to know on which instances to apply the action.</p>
+<p>Additional parameters can be defined as long as they are one of the supported types:<br />
+<code>int, float, str, bool, PropertyId, Enum, VectorType, OwnVectorType</code></p>
+<p>A valid plugin function must return an <code>ActionResult</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">ActionResult</span><span class="p">:</span>  
+    <span class="n">groups</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Group</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">notifs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Notif</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+<ul>
+<li><code>groups</code>: Groups of images to be shown in the UI</li>
+<li><code>notifs</code>: Notifications (<code>INFO</code>, <code>ERROR</code>, <code>WARNING</code>)</li>
+<li><code>value</code>: Placeholder for single-value results</li>
+</ul>
+<hr />
+<h3 id="actionresult">ActionResult</h3>
+<p>The <code>ActionResult</code>object serves a unified return type for plugin actions.</p>
+<div class="highlight"><pre><span></span><code><span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">ActionResult</span><span class="p">:</span>  
+    <span class="n">groups</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Group</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">notifs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Notif</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+<h4 id="groups">Groups</h4>
+<p>When called from the instance views the actions <code>group</code>, <code>similar</code>and <code>execute</code> can show instance groups to the user by filling the <code>groups</code>field.</p>
+<p>A <code>Group</code>is defined as follows:
+<div class="highlight"><pre><span></span><code><span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">Group</span><span class="p">:</span>  
+    <span class="n">ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">sha1s</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="c1"># scores of the ids or sha1&#39;s  </span>
+    <span class="n">scores</span><span class="p">:</span> <span class="n">ScoreList</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="c1"># score of the group  </span>
+    <span class="n">score</span><span class="p">:</span> <span class="n">Score</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="err">```</span>
+
+<span class="n">you</span> <span class="n">can</span> <span class="n">populate</span> <span class="n">the</span> <span class="n">group</span> <span class="k">with</span> <span class="err">`</span><span class="n">instances</span><span class="err">`</span><span class="ow">or</span> <span class="err">`</span><span class="n">images</span><span class="err">`</span><span class="n">by</span> <span class="n">fillings</span> <span class="n">the</span> <span class="err">`</span><span class="n">ids</span> <span class="p">(</span><span class="n">instances</span><span class="p">)</span><span class="err">`</span><span class="ow">or</span> <span class="err">`</span><span class="n">sha1s</span> <span class="p">(</span><span class="n">images</span><span class="p">)</span><span class="err">`</span><span class="n">fields</span><span class="o">.</span> <span class="n">Populating</span> <span class="n">both</span> <span class="n">fields</span> <span class="n">should</span> <span class="ow">not</span> <span class="n">be</span> <span class="n">done</span> <span class="ow">and</span> <span class="n">will</span> <span class="n">give</span> <span class="n">unexpected</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">UI</span><span class="o">.</span>
+
+<span class="n">Groups</span> <span class="ow">and</span> <span class="n">instances</span><span class="o">/</span><span class="n">images</span> <span class="n">can</span> <span class="n">have</span> <span class="n">a</span> <span class="n">score</span><span class="o">.</span>
+<span class="err">```</span><span class="n">python</span>
+<span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">Score</span><span class="p">:</span>  
+    <span class="n">value</span><span class="p">:</span> <span class="nb">float</span>  
+    <span class="nb">min</span><span class="p">:</span> <span class="nb">float</span>  
+    <span class="nb">max</span><span class="p">:</span> <span class="nb">float</span>  
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>  
+    <span class="n">max_is_best</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div></p>
+<p>setting the min/max fields allows the UI to show adapted filtering options. the <code>max_is_best</code>field is used to inverse the sorting direction. The <code>description</code>field gives information to the user about the interpretation of this score.</p>
+<p>To score the instances/images fill the <code>scores</code>field with a <code>ScoreList</code>:
+<div class="highlight"><pre><span></span><code><span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">ScoreList</span><span class="p">:</span>  
+    <span class="n">values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>  
+    <span class="nb">min</span><span class="p">:</span> <span class="nb">float</span>  
+    <span class="nb">max</span><span class="p">:</span> <span class="nb">float</span>  
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>  
+    <span class="n">max_is_best</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div>
+The only difference is that the value field is now an array. The values should be in the same order as the <code>ids</code>or <code>sha1s</code>.</p>
+<p>You can also give a custom name to your group to be displayed with <code>name</code>.
+If no name is set a default name will be given.</p>
+<hr />
+<h4 id="notifications">Notifications</h4>
+<p>An action can return notifications for the user.
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Notif</span><span class="p">:</span>  
+    <span class="nb">type</span><span class="p">:</span> <span class="n">NotifType</span>  
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">message</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">data</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span>  
+    <span class="n">functions</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">NotifFunction</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  
+
+<span class="k">class</span><span class="w"> </span><span class="nc">NotifType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>  
+    <span class="n">DEBUG</span> <span class="o">=</span> <span class="s2">&quot;debug&quot;</span>  
+    <span class="n">INFO</span> <span class="o">=</span> <span class="s2">&quot;info&quot;</span>  
+    <span class="n">WARNING</span> <span class="o">=</span> <span class="s2">&quot;warning&quot;</span>  
+    <span class="n">ERROR</span> <span class="o">=</span> <span class="s2">&quot;error&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">NotifFunction</span><span class="p">:</span>  
+    <span class="n">function</span><span class="p">:</span> <span class="nb">str</span>  
+    <span class="n">context</span><span class="p">:</span> <span class="n">ActionContext</span>
+    <span class="n">message</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div></p>
+<ul>
+<li><code>type</code>: type of notification for filtering</li>
+<li><code>name</code>: notification name to be displayed</li>
+<li><code>message</code>: notification message</li>
+<li><code>data</code>: Any data displayed as JSON in the UI</li>
+<li><code>functions</code>: Actions suggestion to be displayed in the UI.</li>
+</ul>
+<p>The <code>NotifFunction.function</code>field expects the function string id. You can get it by saving the function description when registering actions as shown in the next section.</p>
+<div class="highlight"><pre><span></span><code><span class="n">description</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_action_easy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">my_func</span><span class="p">,</span> <span class="n">hooks</span><span class="p">)</span>
+<span class="n">description</span><span class="o">.</span><span class="n">id</span> <span class="c1"># contains the function string id</span>
+</code></pre></div>
+<hr />
+<h3 id="registering-actions">Registering Actions</h3>
+<p>Function can be registered in the plugin constructor <code>__init__()</code>. Two functions are available to do so:
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_action_easy</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">function</span><span class="p">:</span> <span class="n">AsyncCallable</span><span class="p">,</span> 
+    <span class="n">hooks</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FunctionDescription</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">add_action</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">function</span><span class="p">:</span> <span class="n">AsyncCallable</span><span class="p">,</span> 
+    <span class="n">description</span><span class="p">:</span> <span class="n">FunctionDescription</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FunctionDescription</span>
+</code></pre></div>
+The function <code>add_action_easy()</code>automatically parses the given function signature and inline documentation to generate a <code>FunctionDescription</code>. The <code>hooks</code>array defines where in the UI the function should be made available. 
+Current hooks are:
+- <code>'vector_type'</code>: Vector type creation actions
+- <code>'vector'</code>: Vector computation actions
+- <code>'similar'</code>: Similarity search actions
+- <code>'group'</code>: Clustering and grouping actions
+- <code>'execute'</code>: General execution actions</p>
+<p>The <code>FunctionDescription</code>gives the UI all needed information to make an UI element adapted to the functions inputs. Parameter have customizable label, descriptions, input fields.
+For more control over the UI you can populate the <code>FunctionDescription</code>object yourself and register the function with <code>add_action()</code>.</p>
+<hr />
+<h3 id="system-events">System Events</h3>
+<p>Plugins can also listen to events to react accordingly:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">on_instance_import</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+    <span class="n">callback</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Instance</span><span class="p">],</span> 
+    <span class="n">Awaitable</span><span class="p">[</span><span class="kc">None</span><span class="p">]]</span>
+<span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_folder_delete</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">callback</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">DeleteFolderConfirm</span><span class="p">],</span>
+    <span class="n">Awaitable</span><span class="p">[</span><span class="kc">None</span><span class="p">]]</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>For example, the <code>PanopticML</code> plugin uses the instance import event to automatically calculate image vectors and the folder delete event to update its FAISS vector indexes.</p>
+<hr />
+<h2 id="data">Data</h2>
+<p>Plugins often need to read and write project data.<br />
+This section details how to access instances, tags, and vectors from the database, and how to safely commit changes while keeping the UI synchronized with the project state.</p>
+<hr />
+<h3 id="reading">Reading</h3>
+<p>The plugin interface provides methods to query various types of data from the project database.</p>
+<p>The first step is usually to retrieve more information about the instances from the <code>ActionContext</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Get instances by IDs</span>
+<span class="n">instances</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_instances</span><span class="p">(</span><span class="n">ids</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="c1"># Get instances by SHA1 hashes</span>
+<span class="n">instances</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_instances</span><span class="p">(</span><span class="n">sha1s</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;abc123...&quot;</span><span class="p">,</span> <span class="s2">&quot;def456...&quot;</span><span class="p">])</span>  <span class="c1"># Get all instances (no filters)</span>
+<span class="n">instances</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_instances</span><span class="p">()</span>
+</code></pre></div>
+<p>For every data type in Panoptic, the interface gives access to corresponding database queries:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Folders</span>
+<span class="n">get_folders</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Folder</span><span class="p">]</span>
+
+<span class="c1"># Properties</span>
+<span class="n">get_properties</span><span class="p">(</span><span class="n">ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">computed</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Property</span><span class="p">]</span>
+
+<span class="c1"># Tags</span>
+<span class="n">get_tags</span><span class="p">(</span><span class="n">ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">property_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Tag</span><span class="p">]</span>
+
+<span class="c1"># Instance property values</span>
+<span class="n">get_instance_property_values</span><span class="p">(</span>
+    <span class="n">property_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+    <span class="n">instance_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">PropertyValue</span><span class="p">]</span>
+
+<span class="c1"># Image property values</span>
+<span class="n">get_image_property_values</span><span class="p">(</span>
+    <span class="n">property_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+    <span class="n">sha1s</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">PropertyValue</span><span class="p">]</span>
+
+<span class="c1"># Vectors</span>
+<span class="n">get_vectors</span><span class="p">(</span><span class="n">type_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">sha1s</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Vector</span><span class="p">]</span>
+<span class="n">vector_exist</span><span class="p">(</span><span class="n">type_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">sha1</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+
+<span class="c1"># Vector types</span>
+<span class="n">get_vector_types</span><span class="p">(</span><span class="n">source</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">VectorType</span><span class="p">]</span>
+</code></pre></div>
+<p>Multiple filtering options are treated as <strong>OR</strong> conditions.</p>
+<hr />
+<h3 id="writing">Writing</h3>
+<p>Writing to the project database is mostly done with the <strong>commit system</strong>.<br />
+The following types support undo/redo functionality and automatic UI synchronization when using commits:</p>
+<p><code>folders</code>, <code>instances</code>, <code>properties</code>, <code>property_groups</code>, <code>tags</code>, <code>instance_values</code>, and <code>image_values</code>.</p>
+<p>A commit object contains one batch of updates:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">DbCommit</span><span class="p">:</span>  
+    <span class="n">empty_instances</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+    <span class="n">empty_property_groups</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+    <span class="n">empty_properties</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+    <span class="n">empty_tags</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+    <span class="n">empty_instance_values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">InstancePropertyKey</span><span class="p">]</span>
+    <span class="n">empty_image_values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ImagePropertyKey</span><span class="p">]</span>
+
+    <span class="n">folders</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Folder</span><span class="p">]</span> 
+    <span class="n">instances</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Instance</span><span class="p">]</span>
+    <span class="n">property_groups</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">PropertyGroup</span><span class="p">]</span>
+    <span class="n">properties</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Property</span><span class="p">]</span>
+    <span class="n">tags</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Tag</span><span class="p">]</span>  
+    <span class="n">instance_values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">InstanceProperty</span><span class="p">]</span>
+    <span class="n">image_values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ImageProperty</span><span class="p">]</span>
+
+    <span class="n">timestamp</span><span class="p">:</span> <span class="n">datetime</span>
+</code></pre></div>
+<p>To delete objects, mark them in the corresponding <code>empty_</code> lists.</p>
+<p>Some objects have a unique ID of type <code>int</code>. When creating new objects, you should set a negative Id. Helper functions are provided to ensure correct Id attribution:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">create_instance</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">folder_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> 
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+    <span class="n">extension</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+    <span class="n">sha1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+    <span class="n">width</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> 
+    <span class="n">height</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> 
+    <span class="n">ahash</span><span class="p">:</span> <span class="nb">str</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Instance</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_property</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+    <span class="n">type_</span><span class="p">:</span> <span class="n">PropertyType</span><span class="p">,</span> 
+    <span class="n">mode</span><span class="p">:</span> <span class="n">PropertyMode</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Property</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_property_group</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PropertyGroup</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_tag</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">property_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
+    <span class="n">parent_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+    <span class="n">color</span><span class="o">=-</span><span class="mi">1</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tag</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_vector_type</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> 
+    <span class="n">params</span><span class="p">:</span> <span class="nb">dict</span> 
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">VectorType</span>
+</code></pre></div>
+<p>Negative IDs are valid inside a commit and can be referenced by other new objects.<br />
+For example, an <code>InstanceValue</code> can reference both a new instance and a new property with negative IDs.<br />
+When writing to the database, Panoptic automatically determines the correct insertion order and updates the IDs once the objects are stored.</p>
+<p>Execute a commit using one of the following methods:</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">apply_commit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="p">:</span> <span class="n">DbCommit</span><span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">do</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="p">:</span> <span class="n">DbCommit</span><span class="p">)</span>
+</code></pre></div>
+<p>The <code>do()</code> function computes the opposite commit before calling <code>apply_commit()</code>, allowing the operation to be reversed later with <code>undo()</code>.</p>
+<p>Two object types are <strong>not</strong> written through commits: <code>vector_type</code> and <code>vector</code>.<br />
+Use the corresponding methods instead:</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">add_vector_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vec</span><span class="p">:</span> <span class="n">VectorType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">VectorType</span>
+
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">add_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vector</span><span class="p">:</span> <span class="n">Vector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Vector</span>
+</code></pre></div>
+<hr />
+<h2 id="heavy-computation-concurrency">Heavy Computation &amp; Concurrency</h2>
+<p>The Panoptic backend runs in an asynchronous event loop. To avoid blocking the main thread, heavy workloads should be executed in a <code>ThreadPoolExecutor</code>.<br />
+There are two main ways to do this in Panoptic.</p>
+<hr />
+<h3 id="async-helper">Async Helper</h3>
+<p>The easiest way to delegate a blocking function to the executor is with the helper:</p>
+<div class="highlight"><pre><span></span><code><span class="n">res</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div>
+<p>Use this helper for simple background tasks that don’t need to be tracked or visualized in the UI.<br />
+It’s ideal for lightweight operations where you just need to offload a blocking function to a background thread and asynchronously wait for the result.</p>
+<p>Examples include:</p>
+<ul>
+<li>Running small data transformations</li>
+<li>Performing lightweight file I/O operations</li>
+<li>Calling a blocking library function once</li>
+</ul>
+<hr />
+<h3 id="the-task-queue">The Task Queue</h3>
+<p>The <code>TaskQueue</code> is designed to manage and track background tasks.<br />
+Each task can include a sequence of asynchronous or synchronous functions treated as a single work unit.</p>
+<p>Its main advantage is providing <strong>visual feedback in the UI</strong> through a progress bar.<br />
+Additionally, it supports executing specific functions once a set of tasks has completed.</p>
+<hr />
+<h3 id="creating-a-task">Creating a Task</h3>
+<p>Inherit from the <code>Task</code> base class and implement the <code>run()</code> method:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">panoptic.core.task.task</span><span class="w"> </span><span class="kn">import</span> <span class="n">Task</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyProcessingTask</span><span class="p">(</span><span class="n">Task</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">priority</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Set priority=True for urgent tasks</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span> <span class="o">=</span> <span class="n">plugin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">instance</span> <span class="o">=</span> <span class="n">instance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">config</span>
+
+        <span class="c1"># Customize task identification</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Process Image&#39;</span>  <span class="c1"># Shown in UI</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;task_1&#39;</span>  <span class="c1"># Unique identifier</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main task execution - this runs in the background&quot;&quot;&quot;</span>
+        <span class="c1"># Use _async() for CPU-intensive operations</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_heavy_computation</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">config</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Store results (database operations are already async)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">add_vector</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run_if_last</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Called once when all tasks with this key are complete&quot;&quot;&quot;</span>
+        <span class="c1"># Rebuild indexes, update UI, or perform cleanup</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugin</span><span class="o">.</span><span class="n">rebuild_index</span><span class="p">()</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_heavy_computation</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;CPU-intensive work runs in executor thread&quot;&quot;&quot;</span>
+        <span class="c1"># Load and process image</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+
+        <span class="c1"># Perform heavy computation</span>
+        <span class="n">vectors</span> <span class="o">=</span> <span class="n">extract_vectors</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">vectors</span>
+</code></pre></div>
+<p>The <code>self.key</code> field serves two purposes:</p>
+<ul>
+<li>Executes the <code>run_if_last()</code> function on the last task with the same key</li>
+<li>Groups related tasks together in the UI</li>
+</ul>
+<hr />
+<h3 id="adding-tasks-to-the-queue">Adding Tasks to the Queue</h3>
+<p>Add tasks from your plugin using the project interface:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">:</span> <span class="n">Task</span><span class="p">):</span>
+</code></pre></div>
+<p>The TaskBar should now be visible in the UI.</p>
+<h2 id="step-by-step-example">Step by Step example</h2>
+<p>This guide will show you how to create a new plugin step by step. Our goal is to add some custom functions to Panoptic:
+- <code>compute_vectors()</code>: a function that computes image vectors
+- <code>compute_clusters()</code> a function that computes clusters for a list of instances</p>
+<p>To keep it very simple we will implement one function that computes the vectors of an instance selection with the <code>execute</code>hook. And a clustering function with the <code>group</code>hook. We will have only one default vector type.</p>
+<hr />
+<h3 id="folder">Folder</h3>
+<p>A plugin is contained in a folder that we will call <code>my_plugin</code>
+inside this folder we create three files: <code>__init__.py</code>, <code>my_plugin.py</code> and <code>requirements.txt</code></p>
+<div class="highlight"><pre><span></span><code>my_plugin
+| __init__.py
+| my_plugin.py
+| requirements.txt
+</code></pre></div>
+<ul>
+<li><code>__init__.py</code>is the entry point for the plugin loader.</li>
+<li><code>requirements.txt</code>contains the pip module requirements for the plugin. In our case it will be empty.</li>
+<li><code>my_plugin.py</code>contains the plugin code</li>
+</ul>
+<h3 id="plugin-initialization">Plugin Initialization</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># my_plugin.py</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">panoptic.core.plugin.plugin</span><span class="w"> </span><span class="kn">import</span> <span class="n">APlugin</span>  
+<span class="kn">from</span><span class="w"> </span><span class="nn">panoptic.core.project.project</span><span class="w"> </span><span class="kn">import</span> <span class="n">Project</span>  
+<span class="kn">from</span><span class="w"> </span><span class="nn">panoptic.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">ActionContext</span>  
+<span class="kn">from</span><span class="w"> </span><span class="nn">panoptic.models.results</span><span class="w"> </span><span class="kn">import</span> <span class="n">ActionResult</span>  
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin</span><span class="p">(</span><span class="n">APlugin</span><span class="p">):</span>  
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project</span><span class="p">:</span> <span class="n">Project</span><span class="p">,</span> <span class="n">plugin_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>  
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;  </span>
+<span class="sd">        The initialization method for a Panoptic Plugin. </span>
+<span class="sd">        Is called by Panoptic at Project launch.        </span>
+<span class="sd">        :param project: The Project instance        </span>
+<span class="sd">        :param plugin_path: The path to the plugin module        </span>
+<span class="sd">        :param name: The identifier of the plugin as a unique name</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="c1"># dont forget to call parent constructor  </span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">project</span><span class="o">=</span><span class="n">project</span><span class="p">,</span> <span class="n">plugin_path</span><span class="o">=</span><span class="n">plugin_path</span><span class="p">)</span>  
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_action_easy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">compute_vectors</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;vector&#39;</span><span class="p">])</span>  
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_action_easy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">compute_clusters</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">])</span>  
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">compute_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctx</span><span class="p">:</span> <span class="n">ActionContext</span><span class="p">):</span>  
+        <span class="n">res</span> <span class="o">=</span> <span class="n">ActionResult</span><span class="p">()</span>  
+        <span class="c1"># some code ...  </span>
+        <span class="k">return</span> <span class="n">res</span>  
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">compute_clusters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctx</span><span class="p">:</span> <span class="n">ActionContext</span><span class="p">,</span> <span class="n">nb_clusters</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>  
+        <span class="n">res</span> <span class="o">=</span> <span class="n">ActionResult</span><span class="p">()</span>  
+        <span class="c1"># some code ...  </span>
+        <span class="k">return</span> <span class="n">res</span>
+</code></pre></div>
+<p>This code snippet defines our plugin class. It is important to call the parent constructor in our own <code>__init__(..)</code> function to properly initialize the plugin.
+We can then register our function and select our action hooks. The <code>compute_vectors()</code>function is registered as an <code>vector</code>action and the <code>compute_clusters()</code> function as an <code>group</code>action.</p>
+<p>The function body is empty for now but to ensure that UI is happy we already return an <code>ActionResult</code>.</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="c1"># __init__.py</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">my_plugin</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyPlugin</span>  
+
+<span class="n">plugin_class</span> <span class="o">=</span> <span class="n">MyPlugin</span>
+</code></pre></div>
+<p>Finally we declare the <code>plugin_class</code>in the <code>__init__.py</code>file.</p>
+<p>You can now start Panoptic and add your plugin. You should see your clustering function on the <code>group</code> <code>ActionButton</code>.</p>
+<p><img alt="ClusterButton" src="../../../images/plugin/ClusterButton.png" /></p>
+<p>As you can see our vector compute function is not visible in the UI. This is because we didn't register any <code>vector_type</code>for our plugin. Vector types serve as identifier for vectors.</p>
+<p><img alt="EmptyVectorSettings" src="../../../images/plugin/EmptyVectorSettings.png" /></p>
+<h3 id="creating-vectors">Creating Vectors</h3>
+<p>To store vectors in the database we need to register a vector_type for them.
+For this example we will only one type for our dummy vectors.</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vector_types</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  
+        <span class="n">vec_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">create_vector_type</span><span class="p">({</span><span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;fake_vector&quot;</span><span class="p">})</span>  
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">add_vector_type</span><span class="p">(</span><span class="n">vec_type</span><span class="p">)</span>  
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;created &#39;</span><span class="p">,</span> <span class="n">vec_type</span><span class="p">)</span>
+</code></pre></div>
+<p>We implement the <code>_start()</code> function, which is automatically called when the plugin is loaded.<br />
+The variable <code>self.vector_types</code> is automatically updated with vector types created by this plugin. If the list is empty we want to create one. 
+Like other objects, vector types have a unique integer ID managed by the database. You can create a new vector type using the utility function:
+<div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">create_vector_type</span><span class="p">(</span><span class="n">params</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span>
+</code></pre></div>
+Then we add the vector type to the database with
+<div class="highlight"><pre><span></span><code><span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">add_vector_type</span><span class="p">(</span><span class="n">vec_type</span><span class="p">)</span> 
+</code></pre></div></p>
+<p><code>self.vec_type</code>now contains our new vector type, and it is visible in the UI.</p>
+<p><img alt="VectorSettings" src="../../../images/plugin/VectorSettings.png" />
+And our compute vector function is now callable by clicking on the <code>compute</code>button in the vector row.</p>
+<hr />
+<p>We want to place the images in a 1-dimensional vector space where the value represents the main hue (0-255) of the image.
+Our computation function looks like this:
+<div class="highlight"><pre><span></span><code><span class="nd">@staticmethod</span>  
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_hue_vector</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>  
+    <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>  
+    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>  
+    <span class="n">img_hsv</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;HSV&#39;</span><span class="p">)</span>  
+
+    <span class="c1"># Get HSV data as numpy array  </span>
+    <span class="n">hsv_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img_hsv</span><span class="p">)</span>  
+
+    <span class="c1"># Extract hue channel (first channel in HSV)  </span>
+    <span class="n">hue_channel</span> <span class="o">=</span> <span class="n">hsv_array</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span>  
+
+    <span class="c1"># Flatten and calculate histogram  </span>
+    <span class="n">hue_flat</span> <span class="o">=</span> <span class="n">hue_channel</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>  
+
+    <span class="c1"># Get most common hue value  </span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">hue_flat</span><span class="p">)</span>  
+    <span class="n">dominant_hue</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span>  
+
+    <span class="c1"># 1-dimensional vector. Convert to float32 to match database type</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">dominant_hue</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
+</code></pre></div></p>
+<p>and our updated <code>compute_vectors()</code> function</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">compute_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctx</span><span class="p">:</span> <span class="n">ActionContext</span><span class="p">):</span>  
+    <span class="c1"># get instances from database  </span>
+    <span class="n">instances</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_instances</span><span class="p">(</span><span class="n">ids</span><span class="o">=</span><span class="n">ctx</span><span class="o">.</span><span class="n">instance_ids</span><span class="p">)</span>  
+    <span class="c1"># keep only on instance per sha1  </span>
+    <span class="n">unique</span> <span class="o">=</span> <span class="nb">list</span><span class="p">({</span><span class="n">i</span><span class="o">.</span><span class="n">sha1</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">instances</span><span class="p">}</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>  
+    <span class="c1"># get our vector type id  </span>
+    <span class="n">type_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vector_types</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span>  
+
+    <span class="k">for</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">unique</span><span class="p">:</span>  
+        <span class="c1"># compute the hue vector in the executor to avoid blocking </span>
+        <span class="c1"># the main thread  </span>
+        <span class="n">hue_vector</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">compute_hue_vector</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">url</span>
+        <span class="p">)</span>  
+        <span class="c1"># create the vector object to be written in the database  </span>
+        <span class="n">vector</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="n">type_id</span><span class="o">=</span><span class="n">type_id</span><span class="p">,</span> <span class="n">sha1</span><span class="o">=</span><span class="n">instance</span><span class="o">.</span><span class="n">sha1</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">hue_vector</span><span class="p">)</span>  
+        <span class="c1"># write to database  </span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">add_vector</span><span class="p">(</span><span class="n">vector</span><span class="p">)</span>  
+
+    <span class="c1"># send success notification  </span>
+    <span class="n">notif</span> <span class="o">=</span> <span class="n">Notif</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">NotifType</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span> 
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;compute_vectors&#39;</span><span class="p">,</span> 
+        <span class="n">message</span><span class="o">=</span><span class="s1">&#39;Computed all vectors&#39;</span>
+    <span class="p">)</span>  
+    <span class="c1"># always return an ActionResult  </span>
+    <span class="k">return</span> <span class="n">ActionResult</span><span class="p">(</span><span class="n">notifs</span><span class="o">=</span><span class="p">[</span><span class="n">notif</span><span class="p">])</span>
+</code></pre></div>
+<p>It is important to wrap computationally intensive functions with the <code>run_async</code> function.<br />
+Even better, you can use the <code>Task</code> and <code>TaskQueue</code> interfaces to execute computations in the background.<br />
+You can refer to the official <strong>PanopticML</strong> plugin for an example that uses a <code>Task</code> object.</p>
+<p>At the end, we return a notification to indicate that the computation completed successfully.<br />
+This notification will appear in the UI once the action has finished.</p>
+<p><img alt="InfoNotif" src="../../../images/plugin/InfoNotif.png" />
+If your function crashes without proper error handling, Panoptic will automatically generate an error notification that includes the traceback.</p>
+<p><img alt="ErrorNotif" src="../../../images/plugin/ErrorNotif.png" /></p>
+<hr />
+<h3 id="clustering">Clustering</h3>
+<p>Now that we have vectors we can start clustering. For our example we will sort the images by hue value and then create a chosen number of equally sized groups.</p>
+<p>The computation looks like this:
+<div class="highlight"><pre><span></span><code><span class="nd">@staticmethod</span>  
+<span class="k">def</span><span class="w"> </span><span class="nf">group_instances_by_hue</span><span class="p">(</span>
+    <span class="n">instances</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Instance</span><span class="p">],</span> 
+    <span class="n">sha1_to_hue</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span> 
+    <span class="n">num_groups</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="p">):</span>  
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;  </span>
+<span class="sd">    Sort instances by hue and group them.    </span>
+<span class="sd">    &quot;&quot;&quot;</span>   
+    <span class="c1"># Use np for simplicity</span>
+    <span class="n">id_array</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">i</span><span class="o">.</span><span class="n">id</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">instances</span><span class="p">])</span>  
+    <span class="n">hue_array</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sha1_to_hue</span><span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">sha1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">instances</span><span class="p">])</span>  
+
+    <span class="c1"># Sort by hue  </span>
+    <span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">hue_array</span><span class="p">)</span>  
+    <span class="n">sorted_ids</span> <span class="o">=</span> <span class="n">id_array</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>  
+    <span class="n">sorted_hue</span> <span class="o">=</span> <span class="n">hue_array</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>  
+
+    <span class="c1"># Split into equal-sized groups  </span>
+    <span class="n">id_groups</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">sorted_ids</span><span class="p">,</span> <span class="n">num_groups</span><span class="p">)</span>  
+    <span class="n">hue_groups</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">sorted_hue</span><span class="p">,</span> <span class="n">num_groups</span><span class="p">)</span> 
+
+    <span class="k">return</span> <span class="n">id_groups</span><span class="p">,</span> <span class="n">hue_groups</span>
+</code></pre></div></p>
+<p>We have to integrate this result into the <code>ActionResult</code>api.
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">compute_clusters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctx</span><span class="p">:</span> <span class="n">ActionContext</span><span class="p">,</span> <span class="n">nb_clusters</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>  
+    <span class="c1"># get instances from the database  </span>
+    <span class="n">instances</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_instances</span><span class="p">(</span><span class="n">ids</span><span class="o">=</span><span class="n">ctx</span><span class="o">.</span><span class="n">instance_ids</span><span class="p">)</span>  
+    <span class="c1"># get our own vectors from the database  </span>
+    <span class="n">vectors</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get_vectors</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vector_types</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>  
+    <span class="c1"># map sha1 to Hue with the vector data  </span>
+    <span class="n">sha1_to_hue</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="o">.</span><span class="n">sha1</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vectors</span><span class="p">}</span>  
+    <span class="c1"># compute vectors with the data  </span>
+    <span class="n">id_groups</span><span class="p">,</span> <span class="n">hue_groups</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">group_instances_by_hue</span><span class="p">(</span>
+        <span class="n">instances</span><span class="p">,</span> <span class="n">sha1_to_hue</span><span class="p">,</span> <span class="n">nb_clusters</span>
+    <span class="p">)</span>  
+
+    <span class="c1"># iterate over result and fill the Group objects  </span>
+    <span class="n">groups</span> <span class="o">=</span> <span class="p">[]</span>  
+    <span class="k">for</span> <span class="n">id_group</span><span class="p">,</span> <span class="n">hue_group</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">id_groups</span><span class="p">,</span> <span class="n">hue_groups</span><span class="p">):</span>  
+        <span class="c1"># get min and max hue of each group  </span>
+        <span class="n">min_hue</span> <span class="o">=</span> <span class="n">hue_group</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>  
+        <span class="n">max_hue</span> <span class="o">=</span> <span class="n">hue_group</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>  
+        <span class="c1"># create Group of instance ids  </span>
+        <span class="n">group</span> <span class="o">=</span> <span class="n">Group</span><span class="p">(</span>
+            <span class="c1"># extract the instance ids from the np.array</span>
+            <span class="n">ids</span><span class="o">=</span><span class="n">id_group</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> 
+            <span class="c1"># choose a name for the group</span>
+            <span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Hue group: </span><span class="si">{</span><span class="n">min_hue</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">max_hue</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="p">)</span>  
+        <span class="n">groups</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>  
+
+    <span class="c1"># return the clusters  </span>
+    <span class="k">return</span> <span class="n">ActionResult</span><span class="p">(</span><span class="n">groups</span><span class="o">=</span><span class="n">groups</span><span class="p">)</span>
+</code></pre></div></p>
+<p>The implementation of the <code>compute_vectors</code>is easy to follow. First we retrieve all needed data to compute our clustering and then we use the <code>ActionResult</code>to return the groups to the UI.</p>
+<p><img alt="ClusteringHueResult" src="../../../images/plugin/ClusteringHueResult.png" /></p>
+<p>Call the function from the Cluster <code>ActionButton</code>and the result should be visible in the UI. Be sure to have executed the compute vector action before.</p>
+<p>Hopefully this guide was able to make the logic behind the plugin system more understandable. The official <strong>PanopticML</strong> plugin is the best resource to have more complex examples of plugin usage.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../add/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Add plugins">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Add plugins
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../list/" class="md-footer__link md-footer__link--next" aria-label="Next: Plugins existants">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Plugins existants
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
