@@ -40,7 +40,7 @@ On peut noter le cas intéressant de l'exemple ci-dessous où l'on a tenté de r
 
 ## Sauvegarder les clusters
 
-Une fois que l'on est satisfait on peut venir sauvegarder le résultat du cluster pour en faire une propriété persistée et par laquelle on va pouvoir venir manipuler les images. 
+Une fois que l'on est satisfait on peut venir sauvegarder le résultat du cluster pour en faire une propriété persistée et par laquelle on va pouvoir venir manipuler les images. Le plus simple est de cliquer sur l'icône de disquette à côté de "All" puis sur "Avec la hiérarchie" : tous les clusters deviennent des tags d'une nouvelle propriété "Clustering", et les clusters imbriqués deviennent des tags enfants de leur cluster d'origine (voir [Sauvegarder un clustering](/start/clusters/#sauvegarder-un-clustering)). Il est aussi possible de passer en vue "Groupée" et d'utiliser le bouton "Assigner à…" sous chaque cluster pour n'en enregistrer que certains (voir [Annoter un cluster en entier](/start/annotate/#annoter-un-cluster-en-entier)). 
 
 ## Demander des recommandations
 
@@ -51,6 +51,6 @@ Ici par exemple on observe un cluster assez large contenant des vases ou des ass
 
 ## Renommer ses clusters
 
-Une fois ce travail réalisé, il est possible d'ouvrir la propriété créée à l'étape de sauvegarde des clusters dans la modale des tags afin de revenir sur les clusters un à un pour les renommer et leur donner des noms pertinents en fonction de leur contenu, ou encore de venir fusionner certains tags au cas où on aurait trop découpé certains ensembles au moment du clustering. (Pour ce faire on sélectionne deux tags en maintenant la touche SHIFT).
+Une fois ce travail réalisé, il est possible d'ouvrir la propriété utilisée à l'étape de sauvegarde des clusters dans la modale des tags afin de revenir sur les clusters un à un pour les renommer et leur donner des noms pertinents en fonction de leur contenu, ou encore de venir fusionner certains tags au cas où on aurait trop découpé certains ensembles au moment du clustering. (Pour ce faire on sélectionne deux tags en maintenant la touche CTRL, puis on clique sur "Merge Tags").
 
 ![Alt text](../../images/method1.7.png)

@@ -11,11 +11,15 @@ Par exemple, il peut être intéressant de travailler sur un ensemble de photogr
 ### Données
 
 Lors de la création d'un projet, vous devez sélectionner un dossier dans lequel les données du projet seront stockées.
-Chaque projet stocke ses données séparément dans une base de données SQLite [(voir le schéma détaillé)](https://github.com/CERES-Sorbonne/Panoptic/wiki/SQL-Schema).
+Chaque projet stocke ses données séparément dans son dossier, sous la forme de plusieurs bases de données SQLite : data.db pour les propriétés et les annotations, media.db pour les miniatures et les vecteurs, project.db pour les onglets et les paramètres.
 
 ### Paramètres
 
-Un projet peut être configuré avec des paramètres permettant de définir les valeurs par défaut de chaque plugin au niveau du projet. Il est également possible, par exemple, de stocker une copie des images directement dans la base de données, ce qui facilite le partage d’un projet Panoptic en envoyant un seul fichier.
+Un projet peut être configuré avec des paramètres permettant de définir les valeurs de chaque plugin au niveau du projet. Il est également possible, par exemple, de choisir les tailles d'images stockées dans le projet, ce qui facilite le partage d’un projet Panoptic en envoyant son dossier, sans les images d'origine.
+
+### Utilisateurs et historique
+
+Chaque modification apportée à un projet est enregistrée dans un historique, avec sa date et l'utilisateur qui l'a réalisée. Il est ainsi possible d'annuler ou de rétablir des modifications, et de distinguer le travail de plusieurs personnes annotant le même projet à tour de rôle.
 
 ## Images et Instances
 
@@ -92,7 +96,7 @@ Les groupes permettent de regrouper les images en fonction d'une propriété sé
 
 ### Recherche
 
-Une recherche en texte intégral est possible sur toutes les propriétés textuelles via la barre de recherche.
+Une recherche en texte intégral est possible sur toutes les propriétés textuelles via la barre de recherche. Elle accepte aussi les expressions régulières, et le plugin de similarité y ajoute la recherche d'images à partir d'une description textuelle.
 
 ## Vues
 
@@ -100,7 +104,12 @@ Lors de l'affichage des images, plusieurs modes de présentation sont disponible
 
 - **Vue en grille** : affichage par défaut centré sur les images.
 - **Vue en tableau** : permet de visualiser plus de propriétés et/ou des propriétés longues.
-- **Vue en graphe** : affiche un graphe lorsqu'un regroupement est fait sur une valeur numérique ou une date.
+- **Vue graphique** : affiche un graphique du nombre d'images par groupe, par exemple lorsqu'un regroupement est fait sur une date.
+- **Vue spatiale** : place les images sur une carte en deux dimensions, les images proches étant placées côte à côte. Les images peuvent y être rangées en grille, sans chevauchement, puis sélectionnées ou annotées directement sur la carte à l'aide d'un pinceau.
+- **Vue recommandations** : propose des images similaires à un groupe pour le compléter.
+- **Vue groupée** : résume chaque groupe ou cluster par une mosaïque de quelques images.
+
+Il est possible d'afficher deux vues côte à côte dans un même onglet.
 
 ## Onglets
 
@@ -114,7 +123,7 @@ Ces caractéristiques ne sont pas forcément interprétables directement, mais e
 
 ## Clusters
 
-Une fois les vecteurs calculés, les images peuvent être **regroupées automatiquement** en clusters. Contrairement aux groupes créés avec des propriétés, les clusters sont **paramétrables**, peuvent être générés avec différents algorithmes, et ne sont pas **déterministes** (un même clustering peut produire des résultats légèrement différents selon les exécutions).
+Une fois les vecteurs calculés, les images peuvent être **regroupées automatiquement** en clusters. Contrairement aux groupes créés avec des propriétés, les clusters sont **paramétrables**, peuvent être générés avec différents algorithmes, et ne sont pas **déterministes** (un même clustering peut produire des résultats légèrement différents selon les exécutions). Ils ne sont pas enregistrés automatiquement, mais peuvent être sauvegardés en un clic sous forme de tags.
 
 ## Similarité
 

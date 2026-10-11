@@ -59,6 +59,7 @@ plugins:
             Installation: Installation
             'Installation Standard': 'Standard Installation'
             'Installation Standard - Outils de Similarité': 'Standard Installation - Similarity Tools'
+            'Installation Serveur': 'Server Installation'
             'Installation Developpeurs': 'Developer Installation'
             Utilisation: Usage
             'Premier Lancement': 'First Start'
@@ -95,6 +96,11 @@ plugins:
             "Identifier des doublons": "Identify duplicates"
             "Débruiter son corpus": "Clean your corpus"
             "Gérer ses espaces de travail": "Manage your workspaces"
+            "Comparaison de modèles": "Model comparison"
+            "Temps de calcul": "Computation time"
+            Spatialisation: "Spatialization"
+            "Recherche par texte": "Text search"
+            "Doublons proches": "Near duplicates"
             "Cas d'Usage": "Use Cases"
             "Images d'archive": "Archive images"
             Instagram: Instagram
@@ -109,6 +115,7 @@ nav:
   - Installation: 
     - Installation Standard: install/install.md
     - Installation Standard - Outils de Similarité: install/install_plugin.md
+    - Installation Serveur: install/install_server.md
     - Installation Developpeurs: install/install_dev.md
   - Utilisation:
     - Premier Lancement: start/first_start.md
@@ -150,7 +157,11 @@ nav:
     - Gérer ses espaces de travail: method/workspaces.md
   - Comparaison de modèles:
     - Introduction: compare/intro.md
-    - CLIP: compare/clip.md
+    - Temps de calcul: compare/temps.md
+    - Spatialisation: compare/spatialisation.md
+    - Clusters: compare/clusters.md
+    - Recherche par texte: compare/texte.md
+    - Doublons proches: compare/doublons.md
   - Cas d'Usage:
     - Images d'archive: usecases/bnf.md
     - Instagram: usecases/insta.md

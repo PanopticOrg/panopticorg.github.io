@@ -18,4 +18,8 @@ Panoptic permet de:
 - Grouper, trier et filtrer des images en fonction de leurs propriétés (importées ou annotées dans
 l’interface).
 - Importer, gérer et exporter des propriétés associées aux images.
+- Importer des images depuis un dossier de son ordinateur ou depuis une collection IIIF.
+- Visualiser son corpus sous différentes formes : grille, tableau, graphique, carte, mosaïque de groupes.
+- Annoter directement sur la carte des images, en sélectionnant ou en peignant des zones entières.
+- Retrouver, annuler ou rétablir chaque modification grâce à l'historique du projet.
 

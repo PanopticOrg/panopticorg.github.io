@@ -1,8 +1,7 @@
 # Importer des propriétés
 
 Panoptic étant pensé pour le travail avec des données plurisémiotiques, il est possible d’importer dans
-l’interface du logiciel des PROPRIÉTÉS ASSOCIÉES AUX IMAGES. Les propriétés im-
-portées dans Panoptic sont automatiquement structurées comme les propriétés que l’on peut créer soi-même. Elles peuvent donc être modifiées comme vous le souhaitez.
+l’interface du logiciel des PROPRIÉTÉS ASSOCIÉES AUX IMAGES. Les propriétés importées dans Panoptic sont automatiquement structurées comme les propriétés que l’on peut créer soi-même. Elles peuvent donc être modifiées comme vous le souhaitez.
 
 Panoptic permet l'exploration de corpus plurisémiotiques. Pour répondre à ce besoin méthodologique, Panoptic propose une série de fonctionnalités pour manipuler des images ET des données textuelles associées. Il est donc possible d'associer aux images importées un fichier de propriétés, en format .csv.
 
@@ -18,20 +17,25 @@ Un fichier avec l'extension .csv (pour "Comma-Separated Values", "valeurs sépar
 | number | Des données numériques : 0123456789 |
 | tag | du texte, qui sera présenté sous forme de tags dans l'interface de Panoptic |
 | multi_tags | plusieurs blocs de texte, séparés par des virgules (,), qui seront présentés sous forme de tags dans l'interface de Panoptic |
-| checkbox  |  une valeur *true* (case cochée) ou *false* (case non cochée) |
+| checkbox  |  une cellule remplie (par exemple *true*) coche la case, une cellule vide la laisse décochée |
 | url  |  un lien vers un site web |
 | date | une date |
-| color | Des couleurs, dans la liste suivante : red, pink, grape, violet, indigo, blue, cyan, teal, green, lime, yellow, orange |
+| color | Une couleur, sous forme de nombre de 0 à 11 correspondant à la liste suivante : 0 red, 1 pink, 2 grape, 3 violet, 4 indigo, 5 blue, 6 cyan, 7 teal, 8 green, 9 lime, 10 yellow, 11 orange |
+
+!!! Attention
+    Pour une propriété de type checkbox, toute cellule non vide coche la case, y compris une cellule contenant *false*. Pour laisser une case décochée, laissez la cellule vide.
 
 ## Comment formater correctement ces données ?
 
 Le fichier .csv contenant les données associées aux images doit être structuré de la manière suivante :
+
 - Toutes les données doivent être séparées par des points-virgules ( ; ).
-- La première ligne du .csv doit contenir les entêtes. La partie entre crochets correspond au type de la propriété (cf. page précédente). La partie en dehors des crochets correspond au nom que vous souhaitez donner à la propriété.
-    - Cette première ligne doit être écrite de la manière suivante : path;date de création[date];lien vers l’image[url];code couleur 1[color];code couleur 2[color];
-    - Important : la toute première donnée a un format différent ("path") : il s’agit du chemin (relatif ou complet) vers l’endroit où est située l’image sur votre ordinateur : C:/mon/dossier/personnelle/image1.jpg. Pour le reste, vous pouvez ordonner les métadonnées comme vous le souhaitez.
+- La première ligne du .csv doit contenir les entêtes. La partie entre crochets correspond au type de la propriété (cf. tableau ci-dessus). La partie en dehors des crochets correspond au nom que vous souhaitez donner à la propriété.
+    - Cette première ligne doit être écrite de la manière suivante : path;date de création[date];lien vers l’image[url];code couleur 1[color];code couleur 2[color]
+    - Important : la toute première donnée a un format différent ("path") : il s’agit du chemin (relatif ou complet) vers l’endroit où est située l’image sur votre ordinateur : C:/mon/dossier/personnel/image1.jpg. Pour le reste, vous pouvez ordonner les métadonnées comme vous le souhaitez.
+    - Il est aussi possible d'utiliser une colonne "id" à la place de "path", contenant l'identifiant Panoptic des images (celui affiché dans la propriété "id"). C'est notamment le cas des fichiers produits par l'export de Panoptic.
 - Les lignes suivantes contiennent les métadonnées de chaque image, remplies en fonction du type de
-propriétés : C:/mon/dossier/personnel/image1.jpg;24/10/2024;https://instagram.com/image.png;blue;red
+propriétés : C:/mon/dossier/personnel/image1.jpg;24/10/2024;https://instagram.com/image.png;5;0
 
 **Spécificités pour le formatage :**
 
@@ -40,31 +44,45 @@ propriétés : C:/mon/dossier/personnel/image1.jpg;24/10/2024;https://instagram.
 
 ## Exemple d'un fichier .csv bien formaté pour Panoptic
 
-![](../images/import-donnees-csv.png)
+```
+path;artiste[tag];genre[tag];mouvement[tag]
+WikiArt/Vincent van Gogh/13_0062_vincent-van-gogh.jpg;Vincent van Gogh;genre painting;Realism
+WikiArt/Vincent van Gogh/08_0437_vincent-van-gogh.jpg;Vincent van Gogh;portrait;Realism
+WikiArt/Claude Monet/11_1092_claude-monet.jpg;Claude Monet;Unknown Genre;Impressionism
+```
 
 ## Comment importer les données bien formatées dans Panoptic ?
 
-Quand votre fichier à importer est bien structuré, rendez-vous dans votre projet Panoptic et, à droite de la section "Propriétés", cliquez sur l’icône d’import de propriétés. Dans la fenêtre qui s’ouvre, choisissez le fichier .csv à importer. Panoptic ouvre alors le fichier, et en indique une synthèse dans un tableau à cinq colonnes. Vous pouvez agir sur la première et la dernière :
-- Cocher ou décocher les propriétés à importer (de base toutes les
-propriétés du tableau .csv seront importées).
-- Indique le numéro de colonne dans le .csv d’origine.
-- Indique le nom des propriétés et leur type sous forme de logo.
-- Indique si la propriété existe déjà dans Panoptic ou non.
-- Changer le mode de la propriété dans panoptic : "instance" ou "image".
+Quand votre fichier à importer est bien structuré, rendez-vous dans votre projet Panoptic et cliquez sur l’icône d’import, dans la barre d'icônes tout à gauche de l'écran ("Importer"). Dans la fenêtre qui s’ouvre, choisissez "Données".
 
-Précisez en cochant ou non la case "Relative Path" si le chemin des images indiqué dans le fichier .csv est relatif ou absolu.
+![](../images/v1/import-proprietes-1.png)
 
-Vous pouvez ensuite valider l’import en cliquant sur "Import". Les données s’importent dans la section "propriétés" de Panoptic et sont en donc manipulables désormais.
+Un rappel du format attendu s'affiche. Cliquez sur "Upload" et choisissez le fichier .csv à importer.
 
-![](../images/gestion-import-2.png)
+![](../images/v1/import-proprietes-2.png)
 
-![](../images/gestion-import.png)
+Panoptic ouvre alors le fichier, et en indique une synthèse dans un tableau à six colonnes :
+
+- Import : cocher ou décocher les propriétés à importer (de base toutes les propriétés du tableau .csv seront importées).
+- Col : indique le numéro de colonne dans le .csv d’origine.
+- Property : indique le nom des propriétés et leur type sous forme de logo.
+- Type : indique le type de la propriété.
+- Exist : indique si la propriété existe déjà dans Panoptic ou non.
+- Mode : changer le mode de la propriété dans panoptic : "Image" ou "Instance".
+
+Précisez en cochant ou non la case "Chemin relatif ?" si le chemin des images indiqué dans le fichier .csv est relatif ou absolu.
+
+![](../images/v1/import-proprietes-3.png)
+
+Vous pouvez ensuite valider l’import en cliquant sur "Import". Les données s’importent dans la section "Propriétés" de Panoptic et sont donc manipulables désormais.
 
 ## Précision sur le mode de fusion des données
 
 Si l’on cherche à importer des propriétés déjà existantes (typiquement, si deux personnes travaillent chacune de leur côté sur un même corpus d’images et l’annotent avant de se partager leurs annotations pour mettre à jour leurs avancées respectives), il y a la possibilité de choisir le mode de fusion des données. Quatre possibilités sont proposées :
 
-- New : ce mode crée une nouvelle instance de l’image renseignée dans la colonne path (n’écrase donc pas les données existantes)
-- First : ce mode écrase les propriétés de la plus ancienne instance d’une image enregistrée dans Panoptic, et les remplace par celles renseignées dans le fichier .csv en cours d’import.
-- Last : ce mode écrase les propriétés de la plus récente instance d’une image enregistrée dans Panoptic, et les remplace par celles renseignées dans le fichier .csv en cours d’import.
-- All : ce mode écrase toutes les propriétés correspondant aux différentes instances d’uneimage pour les remplacer par les propriétés renseignées dans le fichier .csv importé. 
+- Remplacer première : ce mode écrase les propriétés de la plus ancienne instance d’une image enregistrée dans Panoptic, et les remplace par celles renseignées dans le fichier .csv en cours d’import.
+- Remplacer dernière : ce mode écrase les propriétés de la plus récente instance d’une image enregistrée dans Panoptic, et les remplace par celles renseignées dans le fichier .csv en cours d’import.
+- Remplacer toutes : ce mode écrase toutes les propriétés correspondant aux différentes instances d’une image pour les remplacer par les propriétés renseignées dans le fichier .csv importé.
+- Créer nouvelle : ce mode crée une nouvelle instance de l’image renseignée dans la colonne path (n’écrase donc pas les données existantes).
+
+![](../images/v1/import-proprietes-fusion.png)

@@ -5,7 +5,53 @@
     Panoptic a été pensé et conçu pour être éxecuté sur un ordinateur local. De nombreux efforts d'optimisations ont été effectués pour que le logiciel puisse tourner sur le plus de machines possibles, néanmoins plus le nombre d'images augmentera et plus une machine dotée d'un bon processeur et d'au moins 16Go de RAM sera conseillée pour une bonne expérience d'utilisation.
 
 
-## Avec des fichiers d'installation (recommandé)
+## Avec l'application de bureau (recommandé)
+
+Panoptic est disponible sous la forme d'une application de bureau, qui s'occupe à la fois de l'installation, des mises à jour et du lancement. Panoptic s'ouvre alors dans sa propre fenêtre et non plus dans un navigateur web, ce qui lui permet d'offrir de meilleures performances.
+
+### Installation
+
+Les installateurs se trouvent [sur cette page](https://github.com/CERES-Sorbonne/Panoptic/releases/tag/desktop-latest), dans la section "Assets" :
+
+=== "Windows"
+
+    Téléchargez le fichier `Panoptic_x.x.x_x64-setup.exe` puis lancez-le.
+
+=== "Linux"
+
+    Téléchargez le fichier `.deb` (Ubuntu, Debian...) ou `.rpm` (Fedora...) correspondant à votre distribution, puis installez-le, par exemple :
+
+    ```sh
+    sudo apt install ./Panoptic_x.x.x_amd64.deb
+    ```
+
+=== "macOS"
+
+    Téléchargez le fichier `Panoptic_x.x.x_universal.dmg`, ouvrez-le puis glissez Panoptic dans le dossier Applications. Il fonctionne aussi bien sur les Mac récents (Apple Silicon) que sur les plus anciens (Intel).
+
+!!! warning "Application non signée"
+
+    L'application n'est pas encore signée, votre système peut donc refuser de l'ouvrir la première fois. Sur macOS, autorisez son ouverture dans les réglages "Confidentialité et sécurité". Sur Windows, cliquez sur "Informations complémentaires" puis sur "Exécuter quand même".
+
+### Premier lancement
+
+Au premier lancement, l'application installe elle-même tout ce dont Panoptic a besoin. Une connexion internet est nécessaire pour cette étape, qui peut prendre plusieurs minutes :
+
+1. l'application demande d'abord dans quel dossier installer Panoptic (par défaut, le dossier `panoptic` de votre dossier personnel). C'est dans ce dossier que seront placés l'environnement python de Panoptic et les logs, vos projets pourront être créés n'importe où ailleurs,
+2. sur Windows et Linux, elle demande ensuite si vous possédez une carte graphique NVidia, afin d'installer la version adaptée : la version pour carte graphique accélère l'importation des images, mais prend plus de place sur le disque,
+3. elle installe enfin Panoptic et le plugin de similarité, en affichant le détail de l'installation, puis ouvre la page d'accueil de Panoptic.
+
+Aux lancements suivants, Panoptic s'ouvre directement. Lorsqu'une nouvelle version est disponible, l'application propose de l'installer avant de démarrer. Il est possible de refuser et de garder la version actuelle.
+
+!!! note
+
+    En cas d'erreur pendant l'installation, le message d'erreur et un bouton "Réessayer" s'affichent dans la fenêtre. Le chemin du fichier de logs, utile pour signaler un problème, est indiqué en bas de la fenêtre.
+
+### Changer de base Panoptic
+
+Sur la page d'accueil, sous le numéro de version, l'application affiche la base Panoptic utilisée, c'est à dire le fichier qui contient la liste de vos projets et de vos plugins. Les liens situés en dessous permettent d'ouvrir une autre base existante, d'en créer une nouvelle ou de revenir à la base par défaut. Panoptic redémarre alors sur la base choisie.
+
+## Avec des fichiers d'installation
 
 ### Installation 
 
@@ -35,7 +81,7 @@ Cette installation à base de script permet d'installer la bonne version de pyth
 === "macOS"
 
     ```sh
-    curl -O https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_mac2.sh
+    curl -O https://raw.githubusercontent.com/CERES-Sorbonne/Panoptic/refs/heads/main/install/start_panoptic_mac.sh
     chmod +x start_panoptic_mac.sh
     ./start_panoptic_mac.sh
     ```
@@ -102,6 +148,10 @@ Si vous avez déjà python d'installé, avec une version supérieure ou égale �
 #### Lancement 
 
 Entrez la commande `panoptic` dans votre terminal
+
+!!! note
+
+    Par défaut, Panoptic enregistre la liste de vos projets et de vos plugins dans `~/.panoptic/panoptic.db`. Il est possible d'utiliser une autre base avec `panoptic --db chemin/vers/dossier`.
 
 ### Utilisation d'un environnement virtuel
 
