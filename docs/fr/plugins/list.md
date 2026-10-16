@@ -7,6 +7,7 @@ Ci-dessous sont listés brièvement les plugins (autre que le plugin de similari
 - [PanopticColor](https://github.com/PanopticOrg/PanopticColor): Calculs des valeurs de teinte, saturation, valeur, luminosité ainsi que rouge, bleu et vert des images, permettant de manipuler par la suite les images grâce à leurs propriétés colorimétriques.
 - [PanopticText](https://github.com/PanopticOrg/PanopticText): Regroupe, compare, recherche et cartographie les images selon une propriété texte (OCR, transcription, légende...), voir [le détail ci-dessous](#panoptictext).
 - [PanopticMATCH](https://github.com/PanopticOrg/PanopticMatch): Pour chaque image d'un dossier, trouve l'image la plus similaire d'un autre dossier (par exemple pour retrouver l'original d'une image retouchée), à partir de vecteurs déjà calculés. Les paires sont affichées par similarité décroissante.
+- [PanopticPIMMI](https://github.com/PanopticOrg/PanopticPIMMI): Regroupe les images qui réutilisent un même contenu visuel (copies, recadrages, retouches) avec [PIMMI](https://medialab.sciencespo.fr/outils/pimmi/), l'outil du médialab de Sciences Po, voir [le détail ci-dessous](#panopticpimmi).
 
 ## PanopticDescribe
 
@@ -65,3 +66,19 @@ Les autres fonctions utilisent les vecteurs de texte :
 !!! note
 
     Les fonctions du plugin de similarité (PanopticML) n'utilisent que leurs propres vecteurs : les vecteurs de texte ne leur sont pas proposés.
+
+## PanopticPIMMI
+
+PanopticPIMMI utilise [PIMMI](https://medialab.sciencespo.fr/outils/pimmi/) (Python IMage MIning), développé par le médialab de Sciences Po, pour retrouver les réutilisations d'images : copies exactes, recadrages, redimensionnements, changements de couleur ou retouches légères. Là où le plugin de similarité rapproche des images qui *se ressemblent*, PIMMI compare des points d'intérêt (SIFT) entre les images et vérifie qu'ils sont cohérents géométriquement : il ne relie que des images qui partagent réellement un morceau d'image.
+
+Dans "Créer des clusters", choisir la fonction `compute_pimmi_clusters` : elle s'applique aux images du groupe, ou à tout le projet. Chaque cluster reçoit un score de 0 à 1, plus il est élevé, plus les images du cluster sont reliées entre elles. Seules les images de dossiers locaux sont traitées, celles des sources IIIF sont ignorées.
+
+Les réglages se font dans les paramètres du plugin, les principaux étant :
+
+- `nb_match_ransac` : nombre minimal de points concordants pour relier deux images (10 par défaut), à augmenter pour des liens moins nombreux mais plus sûrs,
+- `algo` : `components` garde chaque ensemble d'images reliées entre elles, `louvain` découpe les grands ensembles en communautés,
+- `reuse_cache` : conserve les points SIFT de chaque image, pour que les calculs suivants soient plus rapides.
+
+!!! note
+
+    Le calcul ne demande pas de vecteurs et tourne sur le processeur : compter quelques secondes pour quelques centaines d'images, davantage au premier lancement, le temps d'extraire les points SIFT.
