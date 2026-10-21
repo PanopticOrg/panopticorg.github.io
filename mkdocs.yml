@@ -70,6 +70,7 @@ plugins:
             'Importer des Propriétés': 'Import Properties'
             'Exporter des Propriétés': 'Export Properties'
             'Manipuler les Images à partir de leurs Propriétés': 'Manipulate Images from their Properties'
+            'Les Vues': 'Views'
             'La Similarité': 'Similarity'
             'Les Clusters': 'Clusters'
             'Les Images Similaires': 'Similar Images'
@@ -127,6 +128,7 @@ nav:
     - Importer des Tags / Thésaurus: start/tagsimport.md
     - Exporter des Propriétés: start/propsexport.md
     - Manipuler les Images à partir de leurs Propriétés: start/filters.md
+    - Les Vues: start/vues.md
     - La Similarité:
       - Les Clusters: start/clusters.md
       - Les Images Similaires: start/similar.md

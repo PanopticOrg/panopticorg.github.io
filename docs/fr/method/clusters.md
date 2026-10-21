@@ -18,10 +18,10 @@ Ce corpus semble n'être pas facilement découpable en sous ensembles bien défi
 
 Avant de se lancer dans un découpage fin, il est utile de faire quelques essais de clustering et de vérifier que le résultat est à peu près cohérent avec la répartition des images sur la carte. Les clusters et la carte sont calculés à partir des mêmes vecteurs : s'ils sont d'accord, c'est un bon signe que le découpage correspond à une organisation réelle du corpus.
 
-Pour cela, on divise la vue (voir [Diviser la vue](/advanced/onglets/#diviser-la-vue)) avec :
+Pour cela, on divise la vue (voir [Diviser la vue](/start/vues/#diviser-la-vue)) avec :
 
 - à gauche, la vue "Groupée", qui résume chaque cluster par une mosaïque d'images,
-- à droite, la vue spatiale affichée sous forme de points (voir [La vue spatiale](/advanced/onglets/#la-vue-spatiale)).
+- à droite, la vue spatiale affichée sous forme de points (voir [La vue spatiale](/start/vues/#la-vue-spatiale)).
 
 Dès que des clusters sont créés, chaque point de la carte prend la couleur de son cluster, et la liste des clusters avec leur couleur s'affiche dans le panneau à droite de la carte. Un clustering cohérent avec la carte forme des zones de couleur bien distinctes, alors que des couleurs entremêlées signalent un découpage qui ne correspond pas à ce que montre la carte.
 

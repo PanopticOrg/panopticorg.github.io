@@ -17,7 +17,7 @@ Cette section vise à recenser quelques raccourcis claviers et astuces d'utilisa
 - **tab lorsque l'on est en train d'annoter une image:** passe à l'annotation de la même propriété sur l'image d'après, 
 - **entrée permet de valider la plupart des actions (annotation, clusters, executer etc.)**
 - **espace maintenu dans la vue spatiale:** déplace la carte, quel que soit l'outil sélectionné,
-- **ctrl + molette avec la sélection par cases ou le pinceau à tags:** change la taille du curseur (voir [La vue spatiale](/advanced/onglets/#la-vue-spatiale)).
+- **ctrl + molette avec la sélection par cases ou le pinceau à tags:** change la taille du curseur (voir [La vue spatiale](/start/vues/#la-vue-spatiale)).
 
 ## Historique des modifications
 

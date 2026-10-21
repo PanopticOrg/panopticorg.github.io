@@ -1,6 +1,6 @@
 # Spatialisation
 
-La vue spatiale place les images sur une carte en deux dimensions à partir de leurs vecteurs (voir [Les onglets](/advanced/onglets/#la-vue-spatiale)). Deux images proches pour le modèle doivent se retrouver côte à côte sur la carte : la qualité de la carte dépend donc directement du modèle choisi.
+La vue spatiale place les images sur une carte en deux dimensions à partir de leurs vecteurs (voir [La vue spatiale](/start/vues/#la-vue-spatiale)). Deux images proches pour le modèle doivent se retrouver côte à côte sur la carte : la qualité de la carte dépend donc directement du modèle choisi.
 
 ## La mesure
 

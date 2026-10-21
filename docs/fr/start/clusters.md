@@ -31,7 +31,7 @@ Les clusters produits possèdent chacun un score affiché en couleur à côté d
 
 ### La vue "Groupée"
 
-Pour avoir une vue d'ensemble des clusters, il est conseillé de passer en vue "Groupée" (menu des vues, en haut à gauche des images, voir [Les onglets](/advanced/onglets/)). Chaque cluster y est résumé par une mosaïque de quelques images, avec son score et son nombre d'images. Les icônes en haut à gauche de la vue permettent de choisir entre une image unique ou une mosaïque plus ou moins grande pour chaque cluster.
+Pour avoir une vue d'ensemble des clusters, il est conseillé de passer en vue "Groupée" (menu des vues, en haut à gauche des images, voir [Les vues](/start/vues/)). Chaque cluster y est résumé par une mosaïque de quelques images, avec son score et son nombre d'images. Les icônes en haut à gauche de la vue permettent de choisir entre une image unique ou une mosaïque plus ou moins grande pour chaque cluster.
 
 ![Alt text](../images/v1/vue-groupee.png)
 
