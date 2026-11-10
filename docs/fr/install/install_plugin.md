@@ -9,7 +9,7 @@ Par soucis de flexibilité, Panoptic est installé sans les outils de similarit�
 
 Au premier lancement, si le plugin n'est pas encore installé, une fenêtre d'accueil vous propose de le faire : il suffit de cliquer sur "Installer le plugin de similarité". Ce même bouton reste disponible sur la page d'accueil de panoptic, dans la section "Plugins". Cela prendra quelques instants car les librairies peuvent être un peu lourdes à télécharger (plusieurs centaines de Mo).
 
-![image](../images/v1/premier-lancement.png)
+![image](../images/v1/premier-lancement.webp)
 
 Une fois l'installation terminée, le bouton affiche "Installé" et le plugin "PanopticML" apparaît dans la liste des plugins de la page d'accueil.
 

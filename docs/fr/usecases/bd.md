@@ -24,7 +24,7 @@ Nous cherchons à étudier le langage iconique au sein de récits picturaux. L'i
 Panoptic a servi a filtrer et grouper les personnages, soit sur nos annotations, soit sur le contexte de production de l'œuvre. Par la suite, nous pouvons utiliser des tris pour ordonner les persos et ainsi comparer leurs annotations.
 Ayant un total de 418 personnages, nous aurions pu placer tous les persos d'un coup sur un axe (à l'aide d'un tri), cependant cela aurait donné un résultat que peu lisible. À l'aide des groupes, nous avons alors pu alors séparer les persos par œuvre, franchise, contexte de production, ou encore en fonction d'autres annoations (identité de genre, animaux/humains, ...).
 
-![usage de panoptic pour un corpus de bd](../../images/bd_clair.jpg)
+![usage de panoptic pour un corpus de bd](../../images/bd_clair.webp)
 
 ### Ce que je ne m'attendais PAS à trouver dans panoptic et dont je me suis servi
 

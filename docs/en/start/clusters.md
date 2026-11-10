@@ -7,21 +7,21 @@ Once vectors are calculated, images can be automatically grouped into **clusters
 
 Once the project is launched and plugins are loaded, click on the "Create clusters" button:
 
-![Alt text](../images/clusters_1.png)
+![Alt text](../images/clusters_1.webp)
 
 This should separate your images into 10 distinct groups by similarity as shown in the image below:
 
-![Alt text](../images/clusters_2.png)
+![Alt text](../images/clusters_2.webp)
 
 ### Parameters
 
 It is also possible to choose the number of clusters you want to produce by clicking on the small arrow located on the "Create clusters" button to open the parameters.
 
-![Alt text](../images/clusters_3.png)
+![Alt text](../images/clusters_3.webp)
 
 Then simply modify the value of nb_clusters to indicate the number of clusters to create.
 
-![Alt text](../images/clusters_4.png)
+![Alt text](../images/clusters_4.webp)
 
 !!! Info
     There are other parameters visible in this image for more advanced uses that we will see later.
@@ -43,7 +43,7 @@ This process can also be repeated indefinitely (as long as there are images to s
 
 The clustering process is primarily an exploration tool and is not automatically saved in Panoptic. If you want to persist the work done with this tool, you must either have annotated the images in the clusters or click on the cluster save button:
 
-![Alt text](../images/clusters_5.png)
+![Alt text](../images/clusters_5.webp)
 
 This button creates a new property named "Clustering" which will assign to each image the cluster it was in as a tag. It should be noted that since clusters can be nested, the tags themselves can be hierarchical.
 
@@ -57,7 +57,7 @@ The main method presented so far is the default "PanopticML.compute_clusters," b
 
 This method can be chosen from a dropdown field in the clustering parameters:
 
-![Alt text](../images/clusters_6.png)
+![Alt text](../images/clusters_6.webp)
 
 ## To Go Further
 

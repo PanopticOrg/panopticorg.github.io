@@ -6,7 +6,7 @@ Un même document est souvent présent plusieurs fois dans un corpus sous des fo
 
 Le corpus de peintures utilisé dans les autres pages ne contenant pas de doublons, un second corpus a été construit : 300 peintures des mêmes artistes, dont 60 ont été dupliquées 7 fois en leur appliquant une modification différente, soit 720 images au total.
 
-![Alt text](../images/v1/compare/doublons-modifications.png)
+![Alt text](../images/v1/compare/doublons-modifications.webp)
 
 - **Recadrage** : seuls les 70 % centraux de l'image sont conservés,
 - **Compression** : l'image est réduite au quart de sa taille et fortement compressée,
@@ -63,11 +63,11 @@ Voici les groupes obtenus avec le seuil par défaut, en vue "Groupée" : CLIP pr
 
 === "CLIP"
 
-    ![Alt text](../images/v1/compare/doublons-clip.png)
+    ![Alt text](../images/v1/compare/doublons-clip.webp)
 
 === "DINOv3"
 
-    ![Alt text](../images/v1/compare/doublons-dinov3.png)
+    ![Alt text](../images/v1/compare/doublons-dinov3.webp)
 
 !!! note
 
@@ -77,7 +77,7 @@ Voici les groupes obtenus avec le seuil par défaut, en vue "Groupée" : CLIP pr
 
 Une partie des "erreurs" relevées ci-dessus n'en sont pas vraiment. Claude Monet a peint de nombreuses séries sur un même motif, et le corpus contient plusieurs Meules, plusieurs Nymphéas et plusieurs vues de la Cathédrale de Rouen. Ces tableaux sont des oeuvres différentes, mais plusieurs modèles (SigLIP2, C-RADIOv4, DINOv3, EmbeddingGemma 2) les jugent extrêmement proches, parfois davantage qu'une copie tournée ou compressée de la même oeuvre.
 
-![Alt text](../images/v1/compare/doublons-series.png)
+![Alt text](../images/v1/compare/doublons-series.webp)
 
 Selon le corpus, ces variantes peuvent être des doublons à écarter ou au contraire des images à étudier ensemble. Dans tous les cas, la détection de doublons est un outil d'aide : il est conseillé de vérifier les groupes proposés avant de supprimer ou d'annoter des images, par exemple en les parcourant dans la vue "Groupée".
 

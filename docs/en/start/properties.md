@@ -21,15 +21,15 @@ To create a property (for example, of type "MultiTags"):
      
 - On the left, click on "New property."
 
-![image](../images/en/creer-prop-1.png)
+![image](../images/en/creer-prop-1.webp)
 
 -  Name the property, choose its type, and choose whether it is an image or instance property. Click "Confirm."
 
-![image](../images/en/creer-prop-2.png)
+![image](../images/en/creer-prop-2.webp)
 
 - Display (or hide) the created property by clicking on the eye icon next to its name.
 
-![image](../images/en/creer-prop-3.png)
+![image](../images/en/creer-prop-3.webp)
 
 !!! Important
 
@@ -51,7 +51,7 @@ For example, you are working with tweets that contain images. If 50 different tw
 
 It is possible to define hierarchical (parent-child) relationships between annotations for **Tag** and **MultiTags** property types. These properties are indeed specific and can be managed in a dedicated space. This space opens from the properties pane, located on the left of the screen, by clicking on the associated symbol.
 
-![image](../images/en/ouvrirGestionTags.png)
+![image](../images/en/ouvrirGestionTags.webp)
 
 !!! Important
 
@@ -61,17 +61,17 @@ It is possible to define hierarchical (parent-child) relationships between annot
 
 In the example, the "tree" view shows existing parent-child relationships (sport/athletics/pole vault; medical images/lungs). The parentage of the different annotations made is done by grabbing an annotation with the mouse and dragging it onto the more general level annotation.
 
-![image](../images/en/VueArbre.png)
+![image](../images/en/VueArbre.webp)
 
 In this tag management space, you can rename your different tags, to improve them if necessary, or merge them, if you find duplicates for example. To merge them, select several tags (using the shift key) and click "Merge Tags."
 
-![image](../images/en/VueArbre2.png)
+![image](../images/en/VueArbre2.webp)
 
 ### "List" View of Tag and Multi-tag Properties
 
 You can also display images in "list" view. Here, when you select a tag, it displays its different relationships: parents, siblings (same parents), children.
 
-![image](../images/en/VueListe.png)
+![image](../images/en/VueListe.webp)
 
 ## Panoptic Properties
 

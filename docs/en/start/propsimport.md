@@ -38,7 +38,7 @@ properties: C:/my/personal/folder/image1.jpg;24/10/2024;https://instagram.com/im
 
 ## Example of a well-formatted .csv file for Panoptic
 
-![](../images/import-donnees-csv.png)
+![](../images/import-donnees-csv.webp)
 
 ## How to import well-formatted data into Panoptic?
 
@@ -54,9 +54,9 @@ Specify by checking or unchecking the "Relative Path" box whether the image path
 
 You can then validate the import by clicking on "Import". The data is imported into the "properties" section of Panoptic and is therefore now manipulable.
 
-![](../images/gestion-import-2.png)
+![](../images/gestion-import-2.webp)
 
-![](../images/gestion-import.png)
+![](../images/gestion-import.webp)
 
 ## Precision on the data merge mode
 

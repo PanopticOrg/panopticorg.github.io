@@ -3,7 +3,7 @@
 Il est possible d'importer un projet déjà existant, ce qui permet de transférer un projet d'un ordinateur à l'autre. 
 Il suffit pour cela de copier le dossier du projet sur l'autre ordinateur, puis de cliquer sur "Importer" depuis la page d'accueil, et de naviguer jusqu'au dossier du projet que l'on souhaite importer. Les dossiers reconnus comme des projets Panoptic sont signalés par l'icône de Panoptic. Cliquez enfin sur "Sélectionner".
 
-![Alt text](../images/v1/import-projet.png)
+![Alt text](../images/v1/import-projet.webp)
 
 !!! info
     Un avantage d'importer un projet c'est que cela permet de ne pas recalculer les vecteurs d'images, ces derniers sont déjà automatiquement stockés dans le dossier du projet.

@@ -8,11 +8,11 @@ Lorsqu'une propriété est affichée, une ligne "Vide..." est affichée en desso
 
  Pour annoter une seule image, il suffit de cliquer sur l'espace "Vide..." associé à la bonne propriété sous l'image, et de compléter par l'annotation que l'on souhaite. Pour une propriété de type Tag ou MultiTags, appuyez sur entrée ou cliquez sur "Créer" pour créer le tag.
 
-![](../images/v1/annoter1.png)
+![](../images/v1/annoter1.webp)
 
 Une fois une annotation créée, celle-ci est automatiquement proposée pour les prochaines annotations, avec le nombre d'images qui la portent déjà.
 
-![](../images/v1/annoter2.png)
+![](../images/v1/annoter2.webp)
 
 ## Annoter par lots
 
@@ -20,7 +20,7 @@ Il est possible d'annoter les images par lots. Lorsque l'on passe la souris sur 
 
 Lorsque plusieurs images sont ainsi sélectionnées, apparaît en haut à droite de Panoptic une barre de sélection indiquant le nombre d'images sélectionnées. En cliquant sur l'icône "pot de peinture" de cette barre, un panneau s'ouvre avec toutes les propriétés du projet. Pour chaque propriété, choisissez une valeur puis indiquez s'il faut l'ajouter aux valeurs existantes ("+"), remplacer les valeurs existantes, ou au contraire la retirer ("-"). Cliquez enfin sur "Appliquer" et les images seront annotées.
 
-![](../images/v1/annoter-lots.png)
+![](../images/v1/annoter-lots.webp)
 
 !!! Attention
 
@@ -36,15 +36,15 @@ Il est possible d'annoter tout un cluster en survolant son nom puis en cliquant 
 
 Dans le panneau qui s’ouvre, choisissez la valeur souhaitée pour la propriété, un tag déjà existant ou un nouveau tag. Enfin, faites "Appliquer".
 
-![](../images/v1/groupe-menu.png)
+![](../images/v1/groupe-menu.webp)
 
 La vue "Groupée" est particulièrement pratique pour annoter des clusters : chaque cluster y est présenté sous forme de mosaïque, avec un bouton "Assigner à…" en dessous. Cliquez dessus et choisissez la propriété dans laquelle enregistrer les annotations (ou créez-en une avec "Nouvelle propriété…").
 
-![](../images/v1/assigner-cluster.png)
+![](../images/v1/assigner-cluster.webp)
 
 Panoptic groupe alors la vue selon cette propriété et ajoute un champ sous chaque cluster. Il suffit d'y entrer une valeur pour annoter toutes les images du cluster d'un coup : le cluster rejoint aussitôt le groupe correspondant. Dans l'exemple, le cluster des natures mortes a été annoté "fleurs" et les 140 images rejoignent le groupe "fleurs".
 
-![](../images/v1/assigner-cluster-2.png)
+![](../images/v1/assigner-cluster-2.webp)
 
 ### Annoter une partie d’un cluster, ou plusieurs parties de plusieurs clusters
 
@@ -68,7 +68,7 @@ Vous pouvez ensuite renommer chaque élément de cette propriété pour donner d
 
 Lorsque l'on clique sur une image, s'ouvre une fenêtre contextuelle affichant l'image en grand. Les icônes en haut à gauche permettent d'afficher le panneau des propriétés de l'image (à gauche) et le panneau des images similaires (en bas).
 
-![](../images/v1/similaires-1.png)
+![](../images/v1/similaires-1.webp)
 
 Vous pouvez annoter directement, par lots, ces différentes images. Plusieurs options ici : 
 
@@ -76,16 +76,16 @@ Vous pouvez au choix : sélectionner toutes les images affichées (coche à gauc
 
 Vous pouvez ensuite cliquer sur l’icône "pot de peinture" à droite d'une propriété de l'image source pour donner la même valeur à toutes les images sélectionnées. Vous pouvez également utiliser la barre de sélection en haut à droite pour ouvrir le panneau affichant toutes les propriétés disponibles, et tagger les images sélectionnées comme bon vous semble (à l’identique de l’image originale, ou bien différemment).
 
-![](../images/v1/similaires-2.png)
+![](../images/v1/similaires-2.webp)
 
 ## Annoter des images similaires à un groupe d'images
 
 Si vous avez déjà commencé à annoter votre corpus d’images, vous pouvez poursuivre l’annotation en cherchant des images similaires à un groupe d’images déjà annotées. Pour ce faire, il faut d’abord grouper les images en fonction d’une propriété (voir la documentation sur le [groupage d'images](https://panopticorg.github.io/start/filters/)). Pour chaque groupe, le menu des trois petits points propose alors l'option "Passer en vue recommandations".
 
-![](../images/v1/reco-menu.png)
+![](../images/v1/reco-menu.webp)
 
 La vue "Recommandations" s'ouvre alors. En haut, une image proposée : il vous suffit de cliquer sur la coche verte ou la croix rouge, pour accepter que l’image proposée rejoigne le groupe associé, ou non (c’est-à-dire, pour valider ou non que l’image soit taggée avec l’annotation correspondante). En dessous sont affichées les prochaines recommandations, les images déjà présentes dans le groupe et la liste noire des images refusées.
 
-![](../images/v1/reco-vue.png)
+![](../images/v1/reco-vue.webp)
 
 Si des filtres sont actifs dans l'onglet dans lequel vous travaillez, il est possible de choisir d’afficher des images similaires seulement présentes dans cet onglet, ou non, en activant ou désactivant le bouton "Filtrer" en haut à gauche de la vue.

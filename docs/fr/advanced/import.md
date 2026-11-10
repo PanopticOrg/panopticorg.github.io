@@ -12,7 +12,7 @@ Concrètement les embeddings sont des listes de chiffres, le nombre de chiffres 
 
 Voici un exemple fictif et extrêmement simplifié d'embeddings de seulement 3 chiffres que l'on pourrait obtenir pour les images suivantes:
 
-![Alt text](../images/advanced_import1.png)
+![Alt text](../images/advanced_import1.webp)
 
 Les deux vecteurs de chats sont a priori plus proches en valeur. On pourrait alors chercher à interprêter ce que représente chaque valeur pour le modèle, (par exemple le type de museau, la posture, le type d’oreille), mais c’est un champ de recherche à part, et ici nous nous contentons d’utiliser le modèle en partant du principe qu’il a été préalablement bien entrainé et saura convertir nos images en vecteurs de telle sorte qu’il puisse bien identifier les images.
 
@@ -22,7 +22,7 @@ Ces groupes peuvent être représentés sur un graphique, ce qui implique toutef
 
 On obtient donc le graphique suivant:
 
-![Alt text](../images/advanced_import2.png)
+![Alt text](../images/advanced_import2.webp)
 
 Ce qui nous permet de constater qu’effectivement on peut visuellement regrouper nos images en groupes, les chats ensemble et le chien à part.
 

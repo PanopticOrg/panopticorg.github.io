@@ -11,7 +11,7 @@ These different functionalities are visual exploration functionalities: everythi
 
 ## Filter
 
-![image](../images/filtres.png)
+![image](../images/filtres.webp)
 
 - Press the "+" next to FILTER.
 - Select the property from which you want to filter the images. Here you define the display conditions for the images.
@@ -24,7 +24,7 @@ Another example, you can also create a CHECKBOX type property, name it "off-topi
 
 ## Group
 
-![image](../images/grouper.png)
+![image](../images/grouper.webp)
 
 By clicking on the "+" next to the GROUP function, select the property from which you want to group images. Once the property is selected, the groups are formed directly on the screen, in the central panel of Panoptic, according to the given criterion.
 
@@ -34,7 +34,7 @@ When a grouping type is added, it is indicated next to the GROUP option. It is p
 
 ### Groups and subgroups:
 
-![image](../images/grouper2.png)
+![image](../images/grouper2.webp)
 
 It is possible to create groups within groups, for example by grouping by a thematic property (what
 has been annotated to describe the image with a keyword), then by a property imported as metadata, the name of the
@@ -50,7 +50,7 @@ It is possible to create clusters of similar images within the same group of ima
 
 ## Sort
 
-![image](../images/tri.png)
+![image](../images/tri.webp)
 
 - Press the "+" next to "SORT".
 - Select the property from which you want to sort the images.
@@ -59,4 +59,4 @@ It is possible to arrange them in alphabetical order, or chronologically, for ex
 
 It is possible to combine GROUPING and SORT functions: one can then create groups based on certain properties, and sort the images arranged in these groups based on other properties. Sorting within groups can, for example, be performed using the "average hash" property calculated by Panoptic. This is a summary similarity calculation. This can, for example, allow sorting photos by the same photographer (group by "author") based on their general resemblances (sort by "average hash").
 
-![image](../images/tri2.png)
+![image](../images/tri2.webp)

@@ -8,7 +8,7 @@ The objective is to create workspaces dedicated to certain objects using filters
 
 ## Views
 
-If each tab can have its own filters, sorts, and groups, it is also possible to configure the desired display at the tab level by choosing the [view](/concepts/#vues). ![Alt text](../images/vues.png)
+If each tab can have its own filters, sorts, and groups, it is also possible to configure the desired display at the tab level by choosing the [view](/concepts/#vues). ![Alt text](../images/vues.webp)
 
 ### Grid View
 The default view displays a simple grid of images.
@@ -22,7 +22,7 @@ A classic table view, it allows focusing more on the properties accompanying the
 A view that is still a bit experimental but allows displaying graphs showing the number of images contained in a grouping.
 Example, if I group my images by date and switch to graph view, I can display the number of images at each date, as well as a preview of the images at that date by hovering over a point:
 
-![Alt text](../images/vue_graphe.png)
+![Alt text](../images/vue_graphe.webp)
 
 !!! note
 
@@ -31,4 +31,4 @@ Example, if I group my images by date and switch to graph view, I can display th
 
 It is also possible to add a new grouping to split the graph according to another property. Here, for example, we add a grouping after the date to then group by the type of source from which the images originate at each date. (We also changed the graph type to histogram by clicking on the "Histogram" button).
 
-![Alt text](../images/vue_graphe_empilee.png)
+![Alt text](../images/vue_graphe_empilee.webp)

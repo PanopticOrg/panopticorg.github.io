@@ -11,7 +11,7 @@ Pour chaque modèle, un type de vecteurs a été créé dans les paramètres du 
 
 Le temps mesuré ne compte que le calcul des vecteurs. Il faut y ajouter, la première fois qu'un modèle est utilisé, le temps de le télécharger, puis à chaque calcul quelques secondes pour le charger en mémoire.
 
-![Alt text](../images/v1/compare/vecteurs-modeles.png)
+![Alt text](../images/v1/compare/vecteurs-modeles.webp)
 
 ## Les résultats
 

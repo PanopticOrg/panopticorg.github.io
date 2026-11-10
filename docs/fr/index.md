@@ -2,7 +2,7 @@
 
 Panoptic est un logiciel dédié à la recherche permettant d'explorer et d'annoter de larges corpus d'images. 
 
-![image](images/demo.gif)
+![image](images/demo.webp)
 
 Cet outil intègre ainsi de nombreuses fonctions avec l’objectif d’aider les chercheur·euses pour travailler au sein d’une importante masse de données : regroupement d’images, recherche de similarités visuelles, annotations fines ou par lots, import de données associées aux images, gestion de corpus plurisémiotiques, etc. 
 

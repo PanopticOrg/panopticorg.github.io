@@ -6,13 +6,13 @@ The tag management window (or modal) allows for easier manipulation of tags in o
 - merge tags if deemed necessary
 
 There are two possible views:
-- the list view, the default view, which displays the list of tags, allowing them to be sorted alphabetically or by the number of images associated with these tags ![Alt text](../images/VueListe.png)
-- the tree view, which is more visual and particularly useful when trying to understand the hierarchical organization of tags ![Alt text](../images/VueArbre.png)
+- the list view, the default view, which displays the list of tags, allowing them to be sorted alphabetically or by the number of images associated with these tags ![Alt text](../images/VueListe.webp)
+- the tree view, which is more visual and particularly useful when trying to understand the hierarchical organization of tags ![Alt text](../images/VueArbre.webp)
 
 ## Access
 
 To open this window, simply click on the enlargement icon next to a tag or multi-tag property:
-![Alt text](../images/ouvrirGestionTags.png)
+![Alt text](../images/ouvrirGestionTags.webp)
 
 ## Sort Tags
 
@@ -20,7 +20,7 @@ In the list view, it is easy to filter tags by searching in the search field, or
 
 To do this, simply use the sort buttons
 
-![Alt text](../images/sorttagsmodals.png)
+![Alt text](../images/sorttagsmodals.webp)
 
 
 

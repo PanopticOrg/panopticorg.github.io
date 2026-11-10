@@ -2,7 +2,7 @@
 
 Au premier démarrage de Panoptic une fenêtre d'accueil s'affiche, puis un tutoriel interactif vous est proposé. Ce tutoriel vous guide pas à pas dans la création d'un premier projet, l'import d'images et la création d'une première propriété. Vous pouvez le suivre en cliquant sur "Next", le passer avec "Skip tour", ou continuer ici en suivant ce guide. 
 
-![image](../images/v1/premier-lancement.png)
+![image](../images/v1/premier-lancement.webp)
 
 ## Plugin de similarités
 

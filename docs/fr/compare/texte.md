@@ -55,7 +55,7 @@ Lorsque l'on décrit ce que représente l'image, les écarts entre modèles sont
 
 Avec "an old man with a white beard wearing a red hat", les modèles trouvent bien des vieillards à barbe blanche, mais ignorent presque tous le chapeau rouge. EmbeddingGemma 2 est celui qui tient le mieux compte de ces requêtes composées, sans pour autant les réussir.
 
-![Alt text](../images/v1/compare/texte-contenu-complexe.png)
+![Alt text](../images/v1/compare/texte-contenu-complexe.webp)
 
 Pour ce type de recherche, il est souvent plus efficace de commencer par une requête simple ("an old man with a white beard"), puis d'affiner à l'oeil ou avec les autres outils de panoptic (images similaires, filtres, annotations).
 
@@ -67,17 +67,17 @@ Les requêtes portant uniquement sur les couleurs ("un tableau principalement bl
 
 CLIP a été entraîné presque uniquement sur des textes en anglais. En français, il reste correct sur les noms d'artistes, qui s'écrivent de la même façon dans les deux langues, mais ses résultats s'effondrent sur tout le reste : il ne trouve plus que 30 % d'images de la couleur demandée et la moitié des images correspondant à un contenu, et des requêtes comme "un nu", "une esquisse préparatoire" ou "une peinture naïve" ne donnent presque plus aucun résultat pertinent. "Un crâne" ne renvoie par exemple aucun crâne, mais des portraits et des nus :
 
-![Alt text](../images/v1/compare/texte-contenu-crane.png)
+![Alt text](../images/v1/compare/texte-contenu-crane.webp)
 
 Sur le petit corpus de peintures, "une scène religieuse" renvoie de même des portraits et des paysages avec CLIP, et des crucifixions et des scènes bibliques avec EmbeddingGemma 2 :
 
 === "CLIP"
 
-    ![Alt text](../images/v1/compare/texte-religieuse-clip.png)
+    ![Alt text](../images/v1/compare/texte-religieuse-clip.webp)
 
 === "EmbeddingGemma 2"
 
-    ![Alt text](../images/v1/compare/texte-religieuse-gemma2.png)
+    ![Alt text](../images/v1/compare/texte-religieuse-gemma2.webp)
 
 Les trois autres modèles perdent peu de chose en français. Il faut toutefois rester attentif aux mots qui existent aussi en anglais avec un autre sens : EmbeddingGemma 2 comprend "un chat" comme le mot anglais "chat" (une conversation) et renvoie des scènes de café plutôt que des chats.
 
@@ -87,11 +87,11 @@ SigLIP2 a été entraîné sur des textes écrits entièrement en minuscules, et
 
 === "a painting by Rembrandt"
 
-    ![Alt text](../images/v1/compare/texte-siglip2-maj.png)
+    ![Alt text](../images/v1/compare/texte-siglip2-maj.webp)
 
 === "a painting by rembrandt"
 
-    ![Alt text](../images/v1/compare/texte-siglip2-min.png)
+    ![Alt text](../images/v1/compare/texte-siglip2-min.webp)
 
 !!! warning "Le seuil de similarité"
 

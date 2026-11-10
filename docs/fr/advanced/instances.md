@@ -4,7 +4,7 @@ L’un des concepts les plus complexes à comprendre dans Panoptic est la diffé
 
 Ainsi, si nous souhaitons observer les images dans Panoptic avec leurs contextes stockés sous forme de propriétés, une même image peut apparaître plusieurs fois si elle a été trouvée plusieurs fois dans le corpus avec des propriétés différentes.
 
-![Alt text](../images/images_instances01.png)
+![Alt text](../images/images_instances01.webp)
 
 !!! tip "En résumé"
 

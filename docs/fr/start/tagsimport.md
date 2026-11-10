@@ -37,8 +37,8 @@ Comme pour l'import des propriétés on clique sur l'icône d'import, dans la ba
 - choisir la propriété dans laquelle importer les tags
 - cliquer sur "Importer les Tags"
 
-![](../images/v1/import-tags.png)
+![](../images/v1/import-tags.webp)
 
 Si tout se passe sans erreurs les Tags sont maintenant disponibles dans la propriété qui a été sélectionnée. Dans l'exemple ci-dessous, on a importé les tags "mythologie", "figures humaines", "animaux", "bateaux" (enfant du tag existant "marines") et "chevaux" (enfant de "animaux") dans la propriété "motifs" :
 
-![](../images/v1/tags-arbre.png)
+![](../images/v1/tags-arbre.webp)

@@ -55,11 +55,11 @@ WikiArt/Claude Monet/11_1092_claude-monet.jpg;Claude Monet;Unknown Genre;Impress
 
 Quand votre fichier à importer est bien structuré, rendez-vous dans votre projet Panoptic et cliquez sur l’icône d’import, dans la barre d'icônes tout à gauche de l'écran ("Importer"). Dans la fenêtre qui s’ouvre, choisissez "Données".
 
-![](../images/v1/import-proprietes-1.png)
+![](../images/v1/import-proprietes-1.webp)
 
 Un rappel du format attendu s'affiche. Cliquez sur "Upload" et choisissez le fichier .csv à importer.
 
-![](../images/v1/import-proprietes-2.png)
+![](../images/v1/import-proprietes-2.webp)
 
 Panoptic ouvre alors le fichier, et en indique une synthèse dans un tableau à six colonnes :
 
@@ -72,7 +72,7 @@ Panoptic ouvre alors le fichier, et en indique une synthèse dans un tableau à 
 
 Précisez en cochant ou non la case "Chemin relatif ?" si le chemin des images indiqué dans le fichier .csv est relatif ou absolu.
 
-![](../images/v1/import-proprietes-3.png)
+![](../images/v1/import-proprietes-3.webp)
 
 Vous pouvez ensuite valider l’import en cliquant sur "Import". Les données s’importent dans la section "Propriétés" de Panoptic et sont donc manipulables désormais.
 
@@ -85,4 +85,4 @@ Si l’on cherche à importer des propriétés déjà existantes (typiquement, s
 - Remplacer toutes : ce mode écrase toutes les propriétés correspondant aux différentes instances d’une image pour les remplacer par les propriétés renseignées dans le fichier .csv importé.
 - Créer nouvelle : ce mode crée une nouvelle instance de l’image renseignée dans la colonne path (n’écrase donc pas les données existantes).
 
-![](../images/v1/import-proprietes-fusion.png)
+![](../images/v1/import-proprietes-fusion.webp)

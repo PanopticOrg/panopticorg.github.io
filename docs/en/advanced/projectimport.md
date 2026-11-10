@@ -3,7 +3,7 @@
 It is possible to import an existing project, which allows transferring a project from one computer to another.
 To do this, simply click on import from the main menu, and navigate to a folder containing the .db file of the project you wish to import.
 
- ![Alt text](../images/import_project01.png)
+ ![Alt text](../images/import_project01.webp)
 
  !!! info
  An advantage of importing a project is that it avoids recalculating image vectors, as these are already automatically stored in the .db file.

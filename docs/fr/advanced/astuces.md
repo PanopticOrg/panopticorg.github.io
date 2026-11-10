@@ -23,11 +23,11 @@ Cette section vise à recenser quelques raccourcis claviers et astuces d'utilisa
 
 L'icône d'horloge à droite du nom du projet ouvre l'historique des modifications. Chaque ligne correspond à une action (par exemple "119 tag(s) modifié(s)"), et les flèches en haut permettent d'annuler ou de rétablir les dernières actions, comme avec ctrl + z. L'onglet "Mes modifications" n'affiche que les actions de l'utilisateur en cours, et "Tous les utilisateurs" celles de toutes les personnes ayant travaillé sur le projet (voir [Utilisateurs](/start/projets/#utilisateurs)).
 
-![Alt text](../images/v1/historique.png)
+![Alt text](../images/v1/historique.webp)
 
 ## Astuces
 
 - lorsque l'on effectue une recherche de similarité par texte, si l'on entre une url d'image à la place du texte, panoptic va télécharger cette image et faire une recherche de similarité par image sur cette image externe.
 - l'icône d'image à gauche de la barre de recherche permet de passer du mode "Instance" (toutes les instances d'une image sont affichées) au mode "Image" (chaque image n'est affichée qu'une seule fois). Voir [Comprendre les instances](/advanced/instances/).
 
-![Alt text](../images/v1/mode-image-instance.png)
+![Alt text](../images/v1/mode-image-instance.webp)

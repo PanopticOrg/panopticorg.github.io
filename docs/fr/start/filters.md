@@ -13,7 +13,7 @@ Les filtres, groupes et tris se gèrent depuis la barre située au-dessus des im
 
 ## Filtrer
 
-![image](../images/v1/filtres.png)
+![image](../images/v1/filtres.webp)
 
 - Appuyez sur le “+” à côté de "Filtrer".
 - Sélectionnez la propriété à partir de laquelle vous voulez filtrer les images. 
@@ -30,7 +30,7 @@ Autre exemple, vous pouvez également créer une propriété de type CHECKBOX ("
 
 ## Grouper
 
-![image](../images/v1/grouper.png)
+![image](../images/v1/grouper.webp)
 
 En cliquant sur le "+" à côté de "Grouper", sélectionnez la propriété à partir de laquelle vous voulez faire le groupage d’images. Une fois la propriété sélectionnée, les groupes se constituent directement à l’écran, dans le panneau central de Panoptic, suivant le critère donné.
 
@@ -40,7 +40,7 @@ Lorsque l’on ajoute un type de groupage, celui-ci s’indique à côté de l�
 
 ### Groupes et sous-groupes :
 
-![image](../images/v1/grouper2.png)
+![image](../images/v1/grouper2.webp)
 
 Il est possible de faire des groupes dans les groupes, par exemple en groupant par une propriété importée en métadonnée, le nom de l'artiste par exemple, puis par une propriété thématique (ce que l’on a annoté pour décrire l’image avec un mot clé, ou ici le genre de l'oeuvre).
 
@@ -54,7 +54,7 @@ Il est possible de faire des clusters d’images similaires au sein d’un même
 
 ## Trier
 
-![image](../images/v1/tri.png)
+![image](../images/v1/tri.webp)
 
 - Appuyez sur le "+" à côté de "Trier".
 - Sélectionnez la propriété à partir de laquelle vous voulez trier les images.
@@ -67,4 +67,4 @@ Il est possible de combiner des fonctions de GROUPAGE, de FILTRE et de TRI : on 
 
 La barre de recherche, en haut à gauche, permet de chercher un texte dans toutes les propriétés des images. Le menu déroulant à gauche de la barre permet de choisir le mode de recherche : "Text" pour une recherche simple, "Regex" pour une recherche par expression régulière, ou une recherche par similarité textuelle fournie par le plugin de similarité (voir [la similarité textuelle](/start/text/)). Le raccourci ctrl + F place directement le curseur dans la barre de recherche.
 
-![image](../images/v1/recherche-modes.png)
+![image](../images/v1/recherche-modes.webp)

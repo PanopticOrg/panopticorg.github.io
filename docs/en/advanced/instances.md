@@ -4,7 +4,7 @@ One of the most complex concepts to understand in Panoptic is the difference bet
 
 Thus, if we wish to observe images in Panoptic with their contexts stored as properties, the same image may appear multiple times if it has been found multiple times in the corpus with different properties.
 
-![Alt text](../images/images_instances01.png)
+![Alt text](../images/images_instances01.webp)
 
 !!! tip "In summary"
 

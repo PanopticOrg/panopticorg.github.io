@@ -12,7 +12,7 @@ Concretely, embeddings are lists of numbers; the number of digits may vary depen
 
 Here is a fictitious and extremely simplified example of embeddings with only 3 numbers that could be obtained for the following images:
 
-![Alt text](../images/advanced_import1.png)
+![Alt text](../images/advanced_import1.webp)
 
 The two cat vectors are a priori closer in value. One could then try to interpret what each value represents for the model (for example, the type of muzzle, posture, type of ear), but this is a separate field of research, and here we content ourselves with using the model assuming that it has been previously well-trained and will be able to convert our images into vectors such that it can properly identify the images.
 
@@ -22,6 +22,6 @@ These groups can be represented on a graph, which however implies keeping only t
 
 We thus obtain the following graph:
 
-![Alt text](../images/advanced_import2.png)
+![Alt text](../images/advanced_import2.webp)
 
 Which allows us to observe that we can indeed visually group our images into groups, the cats together and the dog separately.

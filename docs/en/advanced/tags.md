@@ -10,7 +10,7 @@ In some cases, it can be useful to create several annotations simultaneously. Fo
 
 It is possible to create hierarchical links between tags by clicking on the button below:
 
- ![Alt text](../images/advanced_tags1.png)
+ ![Alt text](../images/advanced_tags1.webp)
 
  Then simply choose an existing tag or create a new one in the field that appears to add a "child" tag.
 

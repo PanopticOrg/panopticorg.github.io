@@ -2,7 +2,7 @@
 
 Panoptic is a research software dedicated to exploring and annotating large image corpora.
 
-![image](images/en/demo.gif)
+![image](images/demo.webp)
 
 This tool integrates numerous functions with the objective of helping researchers work with a large mass of data: image grouping, visual similarity search, fine or batch annotations, import of data associated with images, management of multi-semiotic corpora, etc.
 

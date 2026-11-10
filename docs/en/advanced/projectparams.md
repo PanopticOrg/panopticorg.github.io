@@ -4,7 +4,7 @@ It is possible to manage a number of options in the project settings.
 
 To access them, click on the small gear icon next to the name of the open project in the interface:
 
-![Alt text](../images/params_projets01.png)
+![Alt text](../images/params_projets01.webp)
 
 Here you can manage:
 
@@ -19,6 +19,6 @@ Here you can manage:
 When a plugin is installed in Panoptic, it is automatically activated for all projects. However, in reality, not all projects will necessarily need all plugins. For example, a project without images containing text will not need the OCR plugin.
 It is therefore possible to deactivate unnecessary plugins for a project from the home page by clicking on the three small dots next to the project name:
 
-![Alt text](../images/params_projets02.png)
+![Alt text](../images/params_projets02.webp)
 
 Then simply check or uncheck the plugins to activate/deactivate.

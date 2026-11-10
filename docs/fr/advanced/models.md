@@ -19,11 +19,20 @@ Afin de pouvoir tester ces différents modèles, il faut générer les vecteurs 
 - On choisit le nom du modèle que l'on souhaite utiliser dans le champ "model", par exemple google/siglip2-so400m-patch16-naflex
 - On confirme en appuyant sur Créer et le calcul devrait se lancer en quelques secondes. Sa progression s'affiche en haut de l'écran, à droite du nom du projet.
 
-![Alt text](../images/v1/parametres-vecteurs.png)
+![Alt text](../images/v1/parametres-vecteurs.webp)
 
 !!! note
 
     Il est possible d'également cocher l'option "greyscale" avant d'appuyer sur "Créer" si l'on souhaite ignorer la couleur des images, cela peut être utile par exemple dans un corpus possédant des images en noir et blanc et d'autres en couleurs si jamais on ne souhaitait pas que la couleur soit un critère déterminant par rapport à ce qui est représenté à l'image.
+
+!!! note
+
+    Certains modèles proposent des options supplémentaires, qui n'apparaissent que lorsqu'ils sont choisis :
+
+    - SIGLIP2 : `keep_ratio` (coché par défaut) analyse les images avec leurs proportions d'origine au lieu de les déformer en carré. Cela ne coûte rien de plus en temps de calcul, sauf sur Mac Apple Silicon où le calcul peut être 2 à 3 fois plus lent.
+    - DINOv3 : `high_resolution` analyse les images à 768 px au lieu de 256 px, pour mieux distinguer des images qui ne diffèrent que par leurs détails (pages manuscrites par exemple). Le calcul est nettement plus long.
+
+    Voir par exemple [Trouver des doublons entre deux dossiers](../method/doublons_dossiers.md).
 
 !!! note
 
@@ -39,4 +48,4 @@ Ainsi dans n'importe quelle action de similarité panoptic, clustering, similari
 
 - Lors de l'execution d'une fonction on appuie sur vec_type et on vient choisir les vecteurs que l'on vient de générer. Dans l'exemple ci-dessous, on choisit les vecteurs utilisés pour chercher les images similaires dans la fenêtre d'une image:
 
-![Alt text](../images/v1/choix-vecteurs.png)
+![Alt text](../images/v1/choix-vecteurs.webp)

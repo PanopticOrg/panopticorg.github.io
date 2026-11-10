@@ -7,7 +7,7 @@ Dans panoptic il faut ensuite se rendre sur la page d'accueil et cliquer sur le 
 
 On rentre ensuite l'url git, on clique dans le champ nom (qui devrait se remplir automatiquement à partir de l'url) puis on clique sur Installer.
 
-![Alt text](../images/v1/plugins-ajout.png)
+![Alt text](../images/v1/plugins-ajout.webp)
 
 Le plugin devrait alors s'installer et une fois fini il devient disponible pour tous les projets. Il est ensuite possible de le désactiver pour certains projets (voir [Paramétrer un projet](/advanced/projectparams/)).
 

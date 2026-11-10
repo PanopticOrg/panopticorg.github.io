@@ -671,11 +671,11 @@ Enfin, nous déclarons la `plugin_class` dans le fichier `__init__.py`.
 
 Vous pouvez maintenant démarrer Panoptic et ajouter votre plugin. Vous devriez voir votre fonction de clustering sur le `ActionButton` de `group`.
 
-![Bouton Cluster](../images/plugin/ClusterButton.png)
+![Bouton Cluster](../images/plugin/ClusterButton.webp)
 
 Comme vous pouvez le voir, notre fonction de calcul de vecteur n'est pas visible dans l'interface utilisateur. C'est parce que nous n'avons enregistré aucun `vector_type` pour notre plugin. Les types de vecteurs servent d'identifiant pour les vecteurs.
 
-![Paramètres de vecteur vides](../images/plugin/EmptyVectorSettings.png)
+![Paramètres de vecteur vides](../images/plugin/EmptyVectorSettings.webp)
 
 ### Création de vecteurs
 
@@ -703,7 +703,7 @@ await self.project.add_vector_type(vec_type)
 
 `self.vec_type` contient maintenant notre nouveau type de vecteur, et il est visible dans l'interface utilisateur.
 
-![Paramètres de vecteur](../images/plugin/VectorSettings.png)
+![Paramètres de vecteur](../images/plugin/VectorSettings.webp)
 Et notre fonction de calcul de vecteur est maintenant appelable en cliquant sur le bouton `compute` dans la ligne du vecteur.
 
 ---
@@ -773,10 +773,10 @@ Vous pouvez vous référer au plugin officiel **PanopticML** pour un exemple qui
 À la fin, nous retournons une notification pour indiquer que le calcul s'est terminé avec succès.
 Cette notification apparaîtra dans l'interface utilisateur une fois l'action terminée.
 
-![Notification d'information](../images/plugin/InfoNotif.png)
+![Notification d'information](../images/plugin/InfoNotif.webp)
 Si votre fonction plante sans gestion d'erreur appropriée, Panoptic générera automatiquement une notification d'erreur qui inclut la stacktrace.
 
-![Notification d'erreur](../images/plugin/ErrorNotif.png)
+![Notification d'erreur](../images/plugin/ErrorNotif.webp)
 
 ---
 
@@ -845,7 +845,7 @@ async def compute_clusters(self, ctx: ActionContext, nb_clusters: int):
 
 L'implémentation de `compute_vectors` est facile à suivre. D'abord, nous récupérons toutes les données nécessaires pour calculer notre clustering, puis nous utilisons `ActionResult` pour retourner les groupes à l'interface utilisateur.
 
-![Résultat du clustering par teinte](../images/plugin/ClusteringHueResult.png)
+![Résultat du clustering par teinte](../images/plugin/ClusteringHueResult.webp)
 
 Appelez la fonction depuis l'`ActionButton` "Créer des clusters" et le résultat devrait être visible dans l'interface utilisateur. Assurez-vous d'avoir exécuté l'action de calcul de vecteur auparavant.
 

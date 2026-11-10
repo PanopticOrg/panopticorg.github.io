@@ -10,13 +10,13 @@ In a project, you can work with several image corpora if you wish, imported at o
 
 ## Panoptic Project Management Page
 
-![image](../images/en/page-projet.png)
+![image](../images/en/page-projet.webp)
 
 Projects are managed on a dedicated page (creation, import, deletion), which is Panoptic's home page: it opens when the software is launched and remains accessible at any time.
             
 On the project management page, click on "Create" next to "Create a new project."
 
-![image](../images/en/page-projet-2.png)
+![image](../images/en/page-projet-2.webp)
 
 This involves defining the location on your computer – (the "folder") – where you want to save your project.
 
@@ -33,10 +33,10 @@ Finally, click "Create": your project is created and the Panoptic workspace open
      
 ## Accessing an Existing Project
 
-![image](../images/en/page-projet-3.png)
+![image](../images/en/page-projet-3.webp)
 
 When you open Panoptic, choose the project you wish to open on the left by clicking on it.
 
-![image](../images/en/page-projet-4.png)
+![image](../images/en/page-projet-4.webp)
     
 If you are already in an open project and wish to change projects, click on the arrow in the top left.

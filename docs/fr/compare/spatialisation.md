@@ -33,39 +33,39 @@ Deux mesures complètent les captures :
 
 === "CLIP"
 
-    ![Alt text](../images/v1/compare/carte-clip.png)
+    ![Alt text](../images/v1/compare/carte-clip.webp)
 
 === "MobileNet"
 
-    ![Alt text](../images/v1/compare/carte-mobilenet.png)
+    ![Alt text](../images/v1/compare/carte-mobilenet.webp)
 
 === "MobileCLIP2-S2"
 
-    ![Alt text](../images/v1/compare/carte-mobileclip2-s2.png)
+    ![Alt text](../images/v1/compare/carte-mobileclip2-s2.webp)
 
 === "MobileCLIP2-L-14"
 
-    ![Alt text](../images/v1/compare/carte-mobileclip2-l14.png)
+    ![Alt text](../images/v1/compare/carte-mobileclip2-l14.webp)
 
 === "SigLIP2"
 
-    ![Alt text](../images/v1/compare/carte-siglip2.png)
+    ![Alt text](../images/v1/compare/carte-siglip2.webp)
 
 === "EmbeddingGemma 2"
 
-    ![Alt text](../images/v1/compare/carte-gemma2.png)
+    ![Alt text](../images/v1/compare/carte-gemma2.webp)
 
 === "DINOv2"
 
-    ![Alt text](../images/v1/compare/carte-dinov2.png)
+    ![Alt text](../images/v1/compare/carte-dinov2.webp)
 
 === "DINOv3"
 
-    ![Alt text](../images/v1/compare/carte-dinov3.png)
+    ![Alt text](../images/v1/compare/carte-dinov3.webp)
 
 === "C-RADIOv4"
 
-    ![Alt text](../images/v1/compare/carte-radio.png)
+    ![Alt text](../images/v1/compare/carte-radio.webp)
 
 ## Ce que l'on observe
 

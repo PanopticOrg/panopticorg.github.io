@@ -9,7 +9,7 @@ For flexibility, Panoptic is installed without similarity tools. In most cases, 
 
 To do this, simply click on the "Install Similarity Plugin" button on the Panoptic home page once it is launched. This will take a few moments as the libraries can be a bit heavy to download (several hundred MB).
 
-![image](../images/en/home-plugin.gif)
+![image](../images/en/home-plugin.webp)
 
 !!! warning "Using a Graphics Card"
 

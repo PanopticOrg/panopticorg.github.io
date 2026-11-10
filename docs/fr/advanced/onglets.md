@@ -4,7 +4,7 @@ Comme abordé brièvement précédemment, panoptic propose un système d'onglets
 
 Les onglets se trouvent en haut à droite de l'écran. Le "+" crée un nouvel onglet, un double clic sur le nom d'un onglet permet de le renommer, et la flèche ouvre la liste de tous les onglets du projet.
 
-![Alt text](../images/v1/onglets.png)
+![Alt text](../images/v1/onglets.webp)
 
 Chaque onglet a ses propres [filtres, tris et groupes](/start/filters/), ainsi que sa propre [vue](/start/vues/) et ses propriétés affichées. Passer d'un onglet à l'autre permet donc de retrouver instantanément chaque espace de travail dans l'état où on l'a laissé.
 

@@ -13,7 +13,7 @@ Dans certains cas il peut être utile de vouloir créer simultanément plusieurs
 
 Les liens de hiérarchie entre tags se créent dans la [fenêtre de gestion des tags](/advanced/tagsmodal/), en sélectionnant un tag puis en glissant un autre tag dans sa colonne "Tags parents" ou "Tags enfants". Ils peuvent aussi être importés directement depuis un fichier (voir [Importer des Tags ou un Thésaurus](/start/tagsimport/)).
 
-![Alt text](../images/v1/tags-liste.png)
+![Alt text](../images/v1/tags-liste.webp)
 
  ## Multi "parents"
 

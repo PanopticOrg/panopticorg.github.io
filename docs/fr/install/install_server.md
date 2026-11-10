@@ -128,7 +128,7 @@ Sans ce paramètre, l'explorateur de fichiers de Panoptic permet de parcourir to
 
 Dans l'explorateur de fichiers, les dossiers autorisés apparaissent alors dans la section "Accès rapide", sous leur alias, et la liste des disques est vide :
 
-![Alt text](../images/v1/serveur-dossiers.png)
+![Alt text](../images/v1/serveur-dossiers.webp)
 
 !!! note
 

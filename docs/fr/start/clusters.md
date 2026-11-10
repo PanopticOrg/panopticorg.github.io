@@ -7,17 +7,17 @@ Une fois les vecteurs calculés, les images peuvent être regroupées automatiqu
 
 Une fois le projet lancé et les plugins chargés, cliquer sur les trois petits points à côté de "All" (ou à côté du nom d'un groupe) puis sur "Créer des clusters". Cette option est aussi accessible directement par l'icône qui apparaît au survol du nom du groupe.
 
-![Alt text](../images/v1/groupe-menu.png)
+![Alt text](../images/v1/groupe-menu.webp)
 
 Une petite fenêtre de paramètres s'ouvre. Cliquez sur "Lancer" : cela devrait séparer vos images en 10 groupes distincts par similarité comme sur l'image ci dessous:
 
-![Alt text](../images/v1/clusters.png)
+![Alt text](../images/v1/clusters.webp)
 
 ### Les paramètres
 
 Avant de lancer le calcul, il est possible de choisir le nombre de clusters que l'on souhaite produire en modifiant la valeur de nb_clusters.
 
-![Alt text](../images/v1/clusters-parametres.png)
+![Alt text](../images/v1/clusters-parametres.webp)
 
 !!! Info
     Le paramètre vec_type permet de choisir les vecteurs à utiliser, si plusieurs types de vecteurs ont été calculés pour le projet (voir [Choisir son modèle](/advanced/models/)).
@@ -33,7 +33,7 @@ Les clusters produits possèdent chacun un score affiché en couleur à côté d
 
 Pour avoir une vue d'ensemble des clusters, il est conseillé de passer en vue "Groupée" (menu des vues, en haut à gauche des images, voir [Les vues](/start/vues/)). Chaque cluster y est résumé par une mosaïque de quelques images, avec son score et son nombre d'images. Les icônes en haut à gauche de la vue permettent de choisir entre une image unique ou une mosaïque plus ou moins grande pour chaque cluster.
 
-![Alt text](../images/v1/vue-groupee.png)
+![Alt text](../images/v1/vue-groupee.webp)
 
 ## Imbriquer des clusters
 
@@ -51,7 +51,7 @@ Le processus de clustering est avant tout un outil d'exploration est n'est pas s
 
 L'icône de disquette qui apparaît à côté de "All" (ou à côté d'un cluster qui a été redivisé) permet d'enregistrer en une seule fois tous les clusters affichés dans une nouvelle propriété de type multi tags nommée "Clustering". Chaque cluster devient un tag, nommé d'après sa position dans le clustering : par exemple "Clustering_8.0" pour le premier des 8 clusters, puis "Clustering_8.0.1" pour le deuxième sous-cluster de celui-ci.
 
-![Alt text](../images/v1/clusters-sauvegarde.png)
+![Alt text](../images/v1/clusters-sauvegarde.webp)
 
 Trois modes d'enregistrement sont proposés, qui ne diffèrent que lorsque des clusters ont été imbriqués:
 
@@ -61,7 +61,7 @@ Trois modes d'enregistrement sont proposés, qui ne diffèrent que lorsque des c
 
 Voici par exemple le résultat d'un enregistrement avec la hiérarchie, vu dans la vue arbre de la fenêtre des tags : le premier cluster a été redivisé en trois, et ses trois sous-clusters sont devenus ses tags enfants.
 
-![Alt text](../images/v1/clusters-sauvegarde-arbre.png)
+![Alt text](../images/v1/clusters-sauvegarde-arbre.webp)
 
 Il ne reste ensuite plus qu'à renommer les tags pour leur donner des noms pertinents (voir [La fenêtre de gestion des tags](/advanced/tagsmodal/)).
 
@@ -69,7 +69,7 @@ Il ne reste ensuite plus qu'à renommer les tags pour leur donner des noms perti
 
 Si l'on préfère n'enregistrer que certains clusters, ou les ranger directement dans une propriété existante, on peut utiliser le bouton "Assigner à…" de la vue "Groupée", qui permet de donner une valeur à tout un cluster en une seule fois (voir [Annoter un cluster en entier](/start/annotate/#annoter-un-cluster-en-entier)).
 
-![Alt text](../images/v1/assigner-cluster-2.png)
+![Alt text](../images/v1/assigner-cluster-2.webp)
 
 ## Différentes façons de clusteriser
 
@@ -81,7 +81,7 @@ La méthode principale présentée jusqu'ici est celle par défaut "PanopticML.c
 
 Cette méthode peut être choisie depuis le champ déroulant en haut de la fenêtre des paramètres de clustering: 
 
-![Alt text](../images/v1/clusters-fonctions.png)
+![Alt text](../images/v1/clusters-fonctions.webp)
 
 ## Pour aller plus loin
 

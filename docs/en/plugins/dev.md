@@ -671,11 +671,11 @@ Finally we declare the `plugin_class`in the `__init__.py`file.
 
 You can now start Panoptic and add your plugin. You should see your clustering function on the `group` `ActionButton`.
 
-![ClusterButton](../images/plugin/ClusterButton.png)
+![ClusterButton](../images/plugin/ClusterButton.webp)
 
 As you can see our vector compute function is not visible in the UI. This is because we didn't register any `vector_type`for our plugin. Vector types serve as identifier for vectors.
 
-![EmptyVectorSettings](../images/plugin/EmptyVectorSettings.png)
+![EmptyVectorSettings](../images/plugin/EmptyVectorSettings.webp)
 
 ### Creating Vectors
 
@@ -703,7 +703,7 @@ await self.project.add_vector_type(vec_type)
 
 `self.vec_type`now contains our new vector type, and it is visible in the UI.
 
-![VectorSettings](../images/plugin/VectorSettings.png)
+![VectorSettings](../images/plugin/VectorSettings.webp)
 And our compute vector function is now callable by clicking on the `compute`button in the vector row.
 
 ---
@@ -773,10 +773,10 @@ You can refer to the official **PanopticML** plugin for an example that uses a `
 At the end, we return a notification to indicate that the computation completed successfully.  
 This notification will appear in the UI once the action has finished.
 
-![InfoNotif](../images/plugin/InfoNotif.png)
+![InfoNotif](../images/plugin/InfoNotif.webp)
 If your function crashes without proper error handling, Panoptic will automatically generate an error notification that includes the traceback.
 
-![ErrorNotif](../images/plugin/ErrorNotif.png)
+![ErrorNotif](../images/plugin/ErrorNotif.webp)
 
 ---
 
@@ -845,7 +845,7 @@ async def compute_clusters(self, ctx: ActionContext, nb_clusters: int):
 
 The implementation of the `compute_vectors`is easy to follow. First we retrieve all needed data to compute our clustering and then we use the `ActionResult`to return the groups to the UI.
 
-![ClusteringHueResult](../images/plugin/ClusteringHueResult.png)
+![ClusteringHueResult](../images/plugin/ClusteringHueResult.webp)
 
 Call the function from the Cluster `ActionButton`and the result should be visible in the UI. Be sure to have executed the compute vector action before.
 

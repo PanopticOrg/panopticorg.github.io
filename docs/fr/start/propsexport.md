@@ -4,7 +4,7 @@ Une fois vos annotations réalisées, vous pouvez décider d'exporter ces derni�
 
 Pour cela, cliquez sur l'icône d'export, dans la barre d'icônes tout à gauche de l'écran ("Exporter"). Vous pourrez alors choisir si vous souhaitez exporter toutes les propriétés, ou seulement une partie d'entre elles. 
 
-![](../images/v1/export.png)
+![](../images/v1/export.webp)
 
 Afin de personnaliser votre export vous pouvez :
 

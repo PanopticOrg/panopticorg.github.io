@@ -1,6 +1,6 @@
 # Import Images
 
-![image](../images/en/import-images.png)
+![image](../images/en/import-images.webp)
 
 Once a project is created or opened, the main Panoptic window opens.
 
@@ -15,7 +15,7 @@ To import images, click on the "**+**" in the top left of Panoptic. You then nee
 
 ## Import Tracking
 
-![image](../images/en/import-bar.png)
+![image](../images/en/import-bar.webp)
 
 Once you have selected the image folder(s) to import, the import and calculation time generally takes several minutes. This depends on your computer's power and the number of images imported.
 

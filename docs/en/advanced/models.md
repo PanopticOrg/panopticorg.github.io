@@ -12,13 +12,13 @@ But there are other models that will offer a different vectorial representation 
 
 In order to test these different models, you need to generate the vectors associated with that model, so go to the project settings:
 
-![Alt text](../images/params_projets01.png)
+![Alt text](../images/params_projets01.webp)
 
 - Then go to Vectors > Create new vectors.
 - Choose the name of the model you want to use, in the example below SIGLIP.
 - Confirm by pressing Create and the calculation should start in a few seconds.
 
-![Alt text](../images/create_vectors.png)
+![Alt text](../images/create_vectors.webp)
 
 !!! note
 
@@ -27,7 +27,7 @@ In order to test these different models, you need to generate the vectors associ
 !!! note
 
     If for any reason the vector calculation is interrupted, it can be restarted by pressing the following button:
-    ![Alt text](../images/restart_vector_compute.png)
+    ![Alt text](../images/restart_vector_compute.webp)
 
 
 ## Using Vectors
@@ -38,4 +38,4 @@ Thus, in any Panoptic similarity action, clustering, visual similarity, textual 
 
 - When executing a function, click on vec_type and choose the vectors you have just generated:
 
-![Alt text](../images/select_vector.png)
+![Alt text](../images/select_vector.webp)

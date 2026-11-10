@@ -5,5 +5,6 @@ Cette section vise à présenter quelques méthodologies et pratiques que nous o
 En résumé rapide de celles qui seront présentées ici:
 - Utiliser des clusters pour identifier des tendances visuelles dans un corpus et les annoter
 - Trouver des doublons parfait ou très proches dans un corpus
+- Retrouver, pour chaque image d'un dossier, l'image correspondante dans un autre dossier
 - Nettoyer un corpus en filtrant le bruit 
 - Importer un thésaurus ou une liste de propriétés pour annoter les images avec

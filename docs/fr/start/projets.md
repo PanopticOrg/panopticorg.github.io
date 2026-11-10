@@ -10,17 +10,17 @@ Dans un projet, vous pouvez travailler avec plusieurs corpus d'images si vous le
 
 ## Page de gestion des projets Panoptic
 
-![image](../images/v1/accueil.png)
+![image](../images/v1/accueil.webp)
 
 Les projets se gèrent dans une page dédiée (création, importation, suppression), qui est la page d'accueil de Panoptic : elle s'ouvre lors du lancement du logiciel et reste accessible n'importe quand.
             
 Dans la page de gestion de projets, cliquez sur "Créer" à côté de "Créer un nouveau projet".
 
-![image](../images/v1/creer-projet.png)
+![image](../images/v1/creer-projet.webp)
 
 Il s'agit alors de définir l'endroit dans votre ordinateur (le "dossier") où vous voulez enregistrer votre projet. Cliquez sur l'icône de dossier à droite du champ "Dossier" : un explorateur de fichiers s'ouvre. Naviguez jusqu'au dossier souhaité puis cliquez sur "Sélectionner".
 
-![image](../images/v1/creer-projet-dossier.png)
+![image](../images/v1/creer-projet-dossier.webp)
 
 !!! Attention
     Il ne faudra pas bouger ce dossier/en renommer le chemin ensuite.
@@ -33,7 +33,7 @@ Nommez ensuite votre projet dans le champ "Nom du projet". Panoptic créera un s
 
 Faites enfin "Créer" : votre projet est créé et la page de travail de Panoptic s'ouvre.
 
-![image](../images/v1/projet-vide.png)
+![image](../images/v1/projet-vide.webp)
      
 ## Accéder à un projet existant
 
@@ -41,7 +41,7 @@ Lorsque vous ouvrez Panoptic, choisissez à gauche le projet que vous souhaitez 
 
 Les trois petits points à droite du nom d'un projet permettent de le supprimer de la liste ("delete") ou de choisir les plugins actifs pour ce projet (voir [Paramétrer un projet](/advanced/projectparams/)).
 
-![image](../images/v1/accueil-projet-options.png)
+![image](../images/v1/accueil-projet-options.webp)
     
 Si vous êtes déjà dans un projet ouvert et que souhaitez changer de projet, en haut à gauche, cliquez sur la flèche.
 
@@ -56,6 +56,6 @@ Les projets créés avec une version de Panoptic antérieure à la v1 doivent ê
 
 En bas de la page d'accueil, la section "Utilisateur" permet de choisir sous quel nom vous travaillez. Par défaut, toutes les modifications sont enregistrées au nom de l'utilisateur "Par défaut". Pour créer un nouvel utilisateur, cliquez sur "Par défaut" puis sur "Nouvel utilisateur", entrez un nom et validez.
 
-![image](../images/v1/utilisateurs.png)
+![image](../images/v1/utilisateurs.webp)
 
 Cela est utile lorsque plusieurs personnes annotent un même projet à tour de rôle : l'historique des modifications (voir [Astuces et raccourcis](/advanced/astuces/)) permet ensuite de distinguer ses propres modifications de celles des autres.

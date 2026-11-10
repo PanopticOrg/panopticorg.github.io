@@ -8,15 +8,15 @@ La fenêtre (ou modal) de gestion des tags permet de manipuler avec plus de faci
 
 Il existe deux vues possibles, accessibles par les icônes en haut à gauche de la fenêtre:
 
-- la vue liste, vue par défaut qui permet d'afficher la liste des tags, de les trier par ordre alphabétique ou par nombre d'images associée à ces tags![Alt text](../images/v1/tags-liste.png)
-- la vue arbre, qui est plus visuelle et est particulièrement utile lorsque l'on cherche à comprendre l'organisation hiérarchique des tags ![Alt text](../images/v1/tags-arbre.png)
+- la vue liste, vue par défaut qui permet d'afficher la liste des tags, de les trier par ordre alphabétique ou par nombre d'images associée à ces tags![Alt text](../images/v1/tags-liste.webp)
+- la vue arbre, qui est plus visuelle et est particulièrement utile lorsque l'on cherche à comprendre l'organisation hiérarchique des tags ![Alt text](../images/v1/tags-arbre.webp)
 
 Les onglets à droite de ces icônes permettent de passer d'une propriété de type tag ou multitags à une autre sans fermer la fenêtre. Le nombre affiché à côté de chaque propriété correspond au nombre d'images annotées.
 
 ## Accès
 
 Pour ouvrir cette fenêtre il suffit de survoler une propriété de type tag ou multitags dans la section "Propriétés" puis de cliquer sur le logo d'agrandissement qui apparaît à côté de son nom:
-![Alt text](../images/v1/propriete-survol.png)
+![Alt text](../images/v1/propriete-survol.webp)
 
 ## Trier les tags
 
@@ -38,12 +38,12 @@ Lorsque l'on clique sur un tag, ses images associées s'affiche à droite. Mais 
 
 Lorsque plusieurs tags sont sélectionnés il est possible de les fusionner en cliquant sur "Merge Tags", au-dessus des images. Le tag "résultant de la fusion" sera le premier tag sélectionné. Il est possible de fusionner autant de tags à la fois que l'on souhaite. Tous les liens de parentés seront également conservés.
 
-![Alt text](../images/v1/tags-fusion.png)
+![Alt text](../images/v1/tags-fusion.webp)
 
 ## Créer des liens de hiérarchie
 
 Comme énoncé sur la page précédente il est possible de créer des liens de hiérarchie entre les tags. Cette opération se fait dans la vue liste : sélectionnez un tag, puis prenez un autre tag dans la colonne "Tous les tags" et glissez-le dans la colonne souhaitée ("Tags parents" ou "Tags enfants"). Dans l'exemple ci-dessous, "forêts" et "marines" ont été glissés dans les enfants de "paysages".
 
-![Alt text](../images/v1/tags-liste.png)
+![Alt text](../images/v1/tags-liste.webp)
 
 La vue arbre permet ensuite de vérifier d'un coup d'oeil l'organisation obtenue, les parents à gauche et les enfants à droite. Il est aussi possible d'y créer un lien directement : cliquez sur le tag parent, maintenez le bouton de la souris enfoncé et relâchez-le sur le tag enfant. Comme toute modification, un lien créé par erreur peut être annulé avec ctrl + z.
